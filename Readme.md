@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олег Лысенок](https://up.htmlacademy.ru/adaptive/19/user/1299739).
-* Наставник: `Неизвестно`.
+* Наставник: `Алексей Зольников`.
 
 ---
 
