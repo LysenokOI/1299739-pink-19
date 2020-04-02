@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Academy: Пинк</title>
+  <link rel=" stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+
+      <div class="header__logo__wrapper">
+        <img class="header__logo" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="PINK">
+      </div>
+
+      <nav class="nav">
+        <button class="nav__toggle" type="button">open menu</button>
+        <div class="nav__wrapper">
+          <ul class="nav__list site__list">
+            <li class="site__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site__item">
+              <a href="https://htmlacademy.ru/">html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <div class="container">
+      <div class="page__title">Конкурс на самое бебашенное путешествие с Пинк</div>
+    </div>
+
+    <div class="container">
+      <p class="section__description">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
+        заполните форму ниже:
+      </p>
+    </div>
+
+    <form class="form" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="form__person">
+
+        <div class="container">
+          <label class="form__input-label label--left">
+            Фамилия:
+            <input class="form__input-text" type="text" name="person-family" id="person-family"
+              placeholder="Укажите фамилию *" required>
+          </label>
+
+          <label class="form__input-label label--left">
+            Имя:
+            <input class="form__input-text" type="text" name="person-name" id="person-name"
+              placeholder="Введите ваше имя *" required>
+          </label>
+
+          <label class="form__input-label label--left">
+            Отчество:
+            <input class="form__input-text" type="text" name="middle-name" id="middle-name"
+              placeholder="Ну и отчество тоже">
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="form__achievements">
+
+        <div class="container">
+          <legend class="form__label label--center">Ваши безбашенные достижения в путешествии</legend>
+
+          <label class="form__box-label">
+            <input class="form__checkbox" type="checkbox" name="check-shark" id="check-shark" />
+            <span class="from__new-checkbox"></span>
+            Сделал селфи с акулой на пляже
+          </label>
+
+          <label class="form__box-label">
+            <input class="form__checkbox" type="checkbox" name="check-burned" id="check-burned" />
+            <span class="form__new-checkbox"></span>
+            Обгорел на пляже
+          </label>
+
+          <label class="form__box-label">
+            <input class="form__checkbox" type="checkbox" name="check-norris" id="check-norris" />
+            <span class="form_new-checkbox"></span>
+            Видел Чака Норриса
+          </label>
+
+          <label class="form__box-label">
+            <input class="form__checkbox" type="checkbox" name="check-souvenirs" id="check-souvenirs" />
+            <span class="form__new-checkbox"></span>
+            Накупил сувениров
+          </label>
+
+          <label class="form__box-label">
+            <input class="form__checkbox" type="checkbox" name="check-tower" id="check-tower" />
+            <span class="form__new-checkbox"></span>
+            Удержал башню
+          </label>
+
+          <label class="form__box-label">
+            <input class="form__checkbox" type="checkbox" name="check-hotel" id="check-hotel" />
+            <span class="form__new-checkbox"></span>
+            Разгромил отель
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="form__contacts">
+        <div class="container">
+          <label class="form__input-label label--left">
+            Номер телефона
+            <input class="form__input-text" type="tel" name="person-phone" id="person-phone"
+              placeholder="Номер пожалуйста">
+          </label>
+
+          <label class="form__input-label label--left">
+            Адрес почты
+            <input class="form__input-text" type="email" name="person-email" id="person-email"
+              placeholder="Введите почту *" required>
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="form__app-used">
+
+        <div class="container">
+          <legend class="form__label label--center">С каким приложением путешествовали?</legend>
+
+          <label class="form__box-label">
+            <input class="form__radio" type="radio" name="app-used" value="ios-app" id="input-ios" />
+            <span class="form__radio-new"></span>
+            Pink для iOS
+          </label>
+
+          <label class="form__box-label">
+            <input class="form__radio" type="radio" name="app-used" value="android-app" id="input-android" />
+            <span class="form__radio-new"></span>
+            PINK на Android
+          </label>
+
+          <label class="form__box-label">
+            <input class="form__radio" type="radio" name="app-used" value="windows-app" id="input-winphone" />
+            <span class="form__radio-new"></span>
+            Windows Phone
+          </label>
+        </div>
+
+      </fieldset>
+
+      <div class="container">
+        <div class="form__emotions">
+          <label class="form__label label--center">
+            Опишите свои эмоции
+            <textarea class="form__input-text" name="text" id="text-emotions"
+              placeholder="Можно прям в красках, не стеняясь в выражениях" width="276"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <div class="container">
+        <button class="form__button button__rect" type="submit">
+          Отправить форму
+        </button>
+
+        <div class="form__required">
+          * &mdash; Обязательные поля
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="footer">
+
+    <div class="contacts">
+      <div class="container">
+
+        <h2 class="section__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__list">
+          <li class="list__item">
+            <h3 class="list__title">Звоните:</h3>
+            <a class="contacts__type" href="tel:+78125550555"><span>+7 (812) 555-66-66</span></a>
+          </li>
+          <li class="list__item">
+            <h3 class="list__title">Пишите:</h3>
+            <a class="contacts__type" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="list__item">
+            <h3 class="list__title">Приезжайте в гости:</h3>
+            <span class="contacts__type">ул. Б. Конюшенная, 19/8</span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="map">
+      <iframe class="map__frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6007238923173!2d30.31441439911702!3d59.93876731016299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1550794768461"
+        width="320" height="300">
+      </iframe>
+    </div>
+
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+
+</html>
