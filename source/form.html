@@ -12,16 +12,17 @@
 
 <body>
 
-  <head class="page-header">
-    <section class="page-header__top">
-      <a href="index.html">
-        <img class="page-header__logo logo--header" src="img/logotype-white-mobile-svg.svg" width="75" height="22"
-          alt="PINK">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">open menu</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site__list list">
+  <header class="header">
+    <div class="container">
+
+      <div class="header__logo__wrapper">
+        <img class="header__logo" src="img/logotype-white-mobile-svg.svg" width="75" height="22" alt="PINK">
+      </div>
+
+      <nav class="nav">
+        <button class="nav__toggle" type="button">open menu</button>
+        <div class="nav__wrapper">
+          <ul class="nav__list site__list">
             <li class="site__item">
               <a href="index.html">Главная</a>
             </li>
@@ -29,7 +30,7 @@
               <a href="photo.html">Фотографии</a>
             </li>
             <li class="site__item">
-              <a>Конкурс</a>
+              <a href="form.html">Конкурс</a>
             </li>
             <li class="site__item">
               <a href="https://htmlacademy.ru/">html academy</a>
@@ -37,13 +38,17 @@
           </ul>
         </div>
       </nav>
-    </section>
-    <section class="page-header__mid">
-      <div class="page-header__description">Конкурс на самое бебашенное путешествие с Пинк</div>
-    </section>
-  </head>
 
-  <main>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section class="page-title">
+      <div class="page-title__description">Конкурс на самое бебашенное путешествие с Пинк</div>
+    </section>
+
     <p class="form-page__description page__description">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста,
       заполните форму ниже:
@@ -171,32 +176,42 @@
 
     </form>
   </main>
-  <footer class="page-footer">
-    <a href="index.html">
-      <img class="page-footer__logo logo--footer" src="img/logotype-white-mobile-svg.svg" width="75" height="22"
-        alt="PINK">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">twitter</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://youtube.com/htmlacademyru">youtube</a>
-        </li>
-      </ul>
+
+  <footer class="footer">
+
+    <div class="contacts">
+      <div class="container">
+
+        <h2 class="section__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__list">
+          <li class="list__item">
+            <h3 class="list__title">Звоните:</h3>
+            <a class="contacts__type" href="tel:+78125550555"><span>+7 (812) 555-66-66</span></a>
+          </li>
+          <li class="list__item">
+            <h3 class="list__title">Пишите:</h3>
+            <a class="contacts__type" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="list__item">
+            <h3 class="list__title">Приезжайте в гости:</h3>
+            <span class="contacts__type">ул. Б. Конюшенная, 19/8</span>
+          </li>
+
+        </ul>
+      </div>
+
     </div>
 
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="map">
+      <iframe class="map__frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6007238923173!2d30.31441439911702!3d59.93876731016299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1550794768461"
+        width="320" height="300">
+      </iframe>
     </div>
 
   </footer>
 
+  <script src="js/app.js" defer></script>
 </body>
 
 </html>
