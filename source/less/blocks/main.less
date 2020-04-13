@@ -1,35 +1,30 @@
 /*Positioning*/
-.main__title__wrapper {
-  position: relative;
-  z-index: 0;
-}
-
-.main__title {
-  position: relative;
-  z-index: 10;
-}
 
 /*Block model*/
-.main__title__wrapper {
+.main__background {
   display: flex;
-  margin-top: -66px;
+  flex-direction: column;
+  margin-top: -88px;
+  &::after {
+    content: url("../../img/iphone-hand-mobile@1x.png");
+  }
 }
 
 .main__title {
   display: flex;
-  margin-top: 142px;
+  margin-top: 92px;
+  text-align: center;
 }
 
 /*Decoration*/
 
-.main__title__wrapper {
+.main__background {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  min-height: 240px;
+  background-position: center;
 }
 
 .main__title {
   color: @light;
   font-size: 24px;
-  font-weight: 300;
 }

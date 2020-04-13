@@ -1,6 +1,12 @@
 /*Positioning*/
 
 /*Block model*/
+.site__item {
+  display: block;
+  min-height: 63px;
+  text-align: center;
+  line-height: 63px;
+}
 
 /*Decoration*/
 .site__list {
@@ -12,6 +18,15 @@
   box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);
   background-color:@dark;
   color: @light;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: "OpenSans-Bold";
+}
+
+.site__item:hover {
+  color: @pink;
+}
+
+.site__item:active {
+  color: @light--opacity;
 }

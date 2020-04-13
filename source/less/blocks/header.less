@@ -8,11 +8,25 @@
 /*Block model*/
 .header__top-bar {
   min-height: 66px;
+  padding-top: 22px;
 }
 
 /* Decorations */
 
 .header__top-bar {
-  background-color: @dark-opacity;
+  background-color: @dark--opacity;
   color: @light;
+}
+
+.header__logo {
+  fill: @light;
+}
+
+.header__logo:hover {
+  fill: @pink;
+}
+
+.header__logo:active {
+  fill: @light;
+  opacity: 0.3;
 }
