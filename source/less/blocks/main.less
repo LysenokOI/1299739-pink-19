@@ -3,10 +3,14 @@
 /*Block model*/
 .main__background {
   display: flex;
+  min-height: 475px;
   flex-direction: column;
   margin-top: -66px;
+  align-items: center;
   &::after {
     content: url("../../img/iphone-hand-mobile@1x.png");
+    margin-top: auto;
+
   }
 }
 
@@ -21,6 +25,7 @@
 .main__background {
   background-color: @dark;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+
   background-repeat: no-repeat;
   background-position: center;
 }
