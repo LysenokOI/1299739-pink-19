@@ -13,18 +13,16 @@
   border-radius: 50%;
   background-color: @dark;
   opacity: 0.3;
+  &:hover {
+    opacity: 1;
+  }
+  &:disabled {
+    opacity: 0.1;
+  }
 }
 
 .slider__toggle--active {
   border: 3px solid @dark;
   background-color: @light;
   opacity: 1;
-}
-
-.slider__toggle:hover {
-  opacity: 1;
-}
-
-.slider__toggle:disabled {
-  opacity: 0.1;
 }

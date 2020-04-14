@@ -11,7 +11,7 @@
 /*Decoration*/
 .button {
   font-size: 18px;
-  font-family: "OpenSans-Bold";
+  font-family: "OpenSans-Bold", Arial, sans-serif;
   border: 3px solid;
 }
 
@@ -22,44 +22,38 @@
 .button__oval--download {
   color: @light;
   border-color: @light;
+  &:hover {
+    background-color: @light;
+    color: @pink;
+  }
+  &:active {
+    color: @pink--opacity;
+  }
 }
 
-.button__oval--download:hover {
-  background-color: @light;
-  color: @pink;
-}
-
-.button__oval--download:active {
-  color: @pink--opacity;
-}
 
 .button__oval--upload {
   border-color: @pink;
   color: @pink;
-}
-
-.button__oval--upload:hover {
-  background-color: @pink;
-  color: @light;
-}
-
-.button__oval--upload:active {
-  color: rgba(255, 255, 255, 0.3);
+  &:hover {
+    background-color: @pink;
+    color: @light;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button__oval--cancel {
   border-color: @dark;
   color: @dark;
   opacity: 0.1;
-}
-
-.button__oval--cancel:hover {
-  opacity: 0.3;
-}
-
-.button__oval--cancel:active {
-  background-color: @dark;
-  color: rgba(255, 255, 255, 0.3);
+  &:hover {
+    opacity: 0.3;
+  }
+  &:active {
+    background-color: @dark;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button__rect {
@@ -68,7 +62,6 @@
   border-radius: 3px;
   color: @light;
   text-transform: uppercase;
-
   &:hover {
     background-color: #1c9b5e;
   }
