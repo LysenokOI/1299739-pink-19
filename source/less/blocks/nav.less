@@ -1,20 +1,50 @@
-/*Positioning*/
-@media (min-width: @tablet-width) {
-
-}
-
-@media (min-width: @desktop-width) {
-
-}
 
 /*Block model*/
-@media (min-width: @tablet-width) {
-
+.nav__link {
+  display: block;
+  min-height: 63px;
+  text-align: center;
+  line-height: 63px;
 }
 
 @media (min-width: @desktop-width) {
-
+  .nav__list {
+    display: flex;
+    min-width: 620px;
+    justify-content: space-between;
+  }
+}
+/*Decoration*/
+.nav__list {
+  border-bottom: solid 1px black;
 }
 
-/*Decoration*/
+.nav__link {
+  border-top: solid 1px black;
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);
+  background-color: @dark;
+  color: @light;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  &:hover {
+  color: @pink;
+  }
+  &:active {
+    color: @light--opacity;
+  }
+}
 
+@media (min-width: @desktop-width) {
+  .nav__list {
+    border-bottom: none;
+  }
+
+  .nav__link {
+    background-color: inherit;
+    border-top: none;
+    box-shadow: none;
+    font-family: "OpenSans", Arial, sans-serif;
+    text-transform: capitalize;
+  }
+}

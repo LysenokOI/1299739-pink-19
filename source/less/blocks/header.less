@@ -1,17 +1,16 @@
 /*Positioning*/
 
-.header__top-bar {
-  position: relative;
-  z-index: 100;
-}
-
 /*Block model*/
-.header {
+.header__wrapper {
   display: flex;
   flex-direction: column;
 }
 
 .header__top-bar {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   min-height: 69px;
@@ -27,6 +26,7 @@
 
 @media (min-width: @tablet-width) {
   .header__top-bar {
+    width: 660px;
     min-height: 110px;
   }
 
@@ -43,10 +43,24 @@
   .header__toggle__wrapper {
     display: none;
   }
+
+  .header__top-bar {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__wrapper {
+    flex-direction: row;
+    width: 940px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* Decorations */
-.header__wrapper {
+.header {
   background-color: @dark--opacity;
   color: @light;
 }
