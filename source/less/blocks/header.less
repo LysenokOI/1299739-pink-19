@@ -1,4 +1,17 @@
 /*Positioning*/
+.header {
+  position: relative;
+  z-index: 100;
+}
+.header__top-bar {
+  position: relative;
+  z-index: 100;
+}
+
+.header__nav {
+  position: relative;
+  z-index: 100;
+}
 
 /*Block model*/
 .header__wrapper {
@@ -40,6 +53,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .header__nav {
+    position: relative;
+    z-index: 100;
+  }
+
   .header__toggle__wrapper {
     display: none;
   }
@@ -61,7 +79,7 @@
 
 /* Decorations */
 .header {
-  background-color: @dark--opacity;
+  background-color: rgba(0,0,0,0.3);
   color: @light;
 }
 
