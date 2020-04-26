@@ -1,5 +1,22 @@
 
 /*Block model*/
+
+.nav__logo__wrapper {
+  padding-top: 22px;
+  margin-left: 20px;
+  min-height: 66px;
+}
+
+.nav__toggle__wrapper {
+  margin-left: auto;
+  padding-top: 21px;
+  margin-right: 20px;
+}
+
+.nav__list {
+  width: 100%;
+}
+
 .nav__link {
   display: block;
   min-height: 63px;
@@ -7,9 +24,30 @@
   line-height: 63px;
 }
 
+@media (min-width: @tablet-width) {
+  .nav__logo__wrapper {
+    padding-top: 27px;
+    min-height: 109px;
+  }
+
+  .nav__toggle__wrapper {
+    padding-top: 44px;
+  }
+}
+
 @media (min-width: @desktop-width) {
+  .nav__logo__wrapper {
+    margin-left: 0px;
+  }
+
+  .nav__toggle__wrapper {
+    display: none;
+  }
+
   .nav__list {
+    margin-left: auto;
     display: flex;
+    width: auto;
     min-width: 650px;
     justify-content: space-between;
   }
@@ -23,9 +61,42 @@
     align-items: center;
     justify-content: center;
     min-height: 110px;
+    line-height: 45px;
+    &--current::after {
+      display: flex;
+      content: "";
+      border-bottom: 2px solid @light;
+    }
   }
 }
+
 /*Decoration*/
+.nav__logo {
+  fill: @light;
+}
+
+.nav__logo:hover {
+  fill: @pink;
+}
+
+.nav__logo:active {
+  fill: @light;
+  opacity: 0.3;
+}
+
+.nav__toggle {
+  background-color: inherit;
+  border: none;
+  fill: @light;
+  line-height: normal;
+  &:hover {
+    fill: @pink;
+  }
+  &:active {
+    fill: @pink--opacity;
+  }
+}
+
 .nav__list {
   border-bottom: solid 1px black;
 }

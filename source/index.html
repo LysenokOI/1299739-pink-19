@@ -3,19 +3,18 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
   <header class="header">
-    <div class="header__wrapper">
-      <div class="header__top-bar">
-
-        <a class="header__logo__wrapper" href="index.html">
-          <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" version="1"
+    <div class="container">
+      <nav class="header__nav nav">
+        <a class="nav__logo__wrapper" href="index.html">
+          <svg class="nav__logo" xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" version="1"
             viewBox="0 0 74.426 22.859">
             <g>
               <path
@@ -23,8 +22,9 @@
             </g>
           </svg>
         </a>
-        <div class="header__toggle__wrapper">
-          <button class="header__toggle" type="button">
+
+        <div class="nav__toggle__wrapper">
+          <button class="nav__toggle" type="button">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px"
               viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
@@ -44,12 +44,10 @@
           </button>
         </div>
 
-      </div>
-
-      <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link " href="index.html"><span class="nav__link--current">Главная</span>
+            </a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="photo.html">Фотографии</a>
@@ -63,25 +61,33 @@
         </ul>
       </nav>
     </div>
+
   </header>
 
   <main class="main">
 
-    <h1 hidden>PINK - Взгляните на жизнь иначе!</h1>
 
-    <div class="main__background main__background--index">
+
+    <section class="main__wrapper main__wrapper--index">
+
+      <div class="main__background main__background--index">
+        <img src="../img/bg-back-mobile@1x.jpg">
+      </div>
+
+      <article class="main__title__wrapper main__title__wrapper--index">
+        <div class="container">
+          <h1 class="main__title main__title--index">
+            Взгляните на жизнь иначе!
+          </h1>
+        </div>
+      </article>
 
       <div class="main__background__hand">
         <img src="../img/iphone-hand-mobile@1x.png" alt="">
       </div>
 
-      <div class="main__title__wrapper main__title__wrapper--index">
-        <span class="main__title main__title--index">
-          Взгляните на жизнь иначе!
-        </span>
-      </div>
+      <article class="main__os os">
 
-      <div class="main__os os">
         <div class="os__wrapper">
           <a class="os__button button button__oval button__oval--download"
             href="https://play.google.com/store/apps?hl=ru">Скачать приложение</a>
@@ -129,9 +135,10 @@
           </ul>
           <p class="os__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </div>
 
-    </div>
+      </article>
+
+    </section>
 
     <section class="goals">
 
