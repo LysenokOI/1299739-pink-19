@@ -10,6 +10,13 @@
 </head>
 
 <body>
+  <svg class="svisually-hidden">
+    <symbol id="icon-yes" viewBox="-82.357 4.875 21.698 16.09">
+      <path
+        d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
+    </symbol>
+  </svg>
+
   <header class="header">
     <div class="container">
       <nav class="header__nav nav">
@@ -46,7 +53,8 @@
 
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link " href="index.html"><span class="nav__link--current">Главная</span>
+            <a class="nav__link " href="index.html">
+              <p class="nav__link--current">Главная</p>
             </a>
           </li>
           <li class="nav__item">
@@ -203,47 +211,60 @@
 
     </section>
 
-    <section class="tariffs">
-      <div class="tariffs__wrapper slider">
-        <ul class="tariffs__list">
+    <section class="tariffs slider">
+      <div class="container">
+        <div class="tariffs__wrapper slider-inner">
+          <ul class="tariffs__list slider-slides">
 
-          <div class="container">
+            <li>
+              <div class="tariffs__filter">Розовый фильтр</div>
+              <div class="tariffs__filter">Смайлики</div>
+              <div class="tariffs__filter">Комментарии</div>
+            </li>
+
             <li class="tariffs__item">
               <div class="tariffs__header">
                 <div class="tariffs__name">База</div>
                 <span class="tariffs__cost">1,99 usd</span>
               </div>
-              <div class="tariffs__filter value-checked">Розовый фильтр</div>
-              <div class="tariffs__filter value-unchecked">Смайлики</div>
-              <div class="tariffs__filter value-unchecked">Комментарии</div>
+              <div class="tariffs__value tariffs__value--checked">
+                <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+                  <use xlink:href="#icon-yes"></use>
+                </svg>
+              </div>
+              <div class="tariffs__value tariffs__value--unchecked"></div>
+              <div class="tariffs__value tariffs__value--unchecked"></div>
             </li>
-          </div>
 
-          <div class="container">
             <li class="tariffs__item">
               <div class="tariffs__header">
                 <div class="tariffs__name mark--hit">Стандарт</div>
                 <span class="tariffs__cost">3,99 usd</span>
               </div>
-              <div class="tariffs__filter value-checked">Розовый фильтр</div>
-              <div class="tariffs__filter value-unchecked">Смайлики</div>
-              <div class="tariffs__filter value-unchecked">Комментарии</div>
+              <div class="tariffs__value tariffs__value--checked"></div>
+              <div class="tariffs__value tariffs__value--checked"></div>
+              <div class="tariffs__value tariffs__value--unchecked"></div>
             </li>
-          </div>
 
-          <div class="container">
             <li class="tariffs__item">
               <div class="tariffs__header">
                 <div class="tariffs__name">Анлим</div>
                 <span class="tariffs__cost">9,99 usd</span>
               </div>
-              <div class="tariffs__filter ">Розовый фильтр</div>
-              <div class="tariffs__filter">Смайлики</div>
-              <div class="tariffs__filter">Комментарии</div>
+              <div class="tariffs__value tariffs__value--checked"></div>
+              <div class="tariffs__value tariffs__value--checked"></div>
+              <div class="tariffs__value tariffs__value--checked"></div>
             </li>
-          </div>
+          </ul>
 
+        </div>
+        <div class="slider__toggles">
+          <button class="slider__toggle slider__toggle--active" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+          <button class="slider__toggle" type="button"></button>
+        </div>
       </div>
+
     </section>
 
   </main>
