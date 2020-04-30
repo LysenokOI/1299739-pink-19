@@ -10,11 +10,16 @@
 </head>
 
 <body>
-  <svg class="svisually-hidden">
+  <svg style="display: none;">
     <symbol id="icon-yes" viewBox="-82.357 4.875 21.698 16.09">
       <path
         d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z" />
     </symbol>
+    <symbol id="icon-no" viewBox="0 0 26.752 26.752">
+      <path
+        d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
+    </symbol>
+
   </svg>
 
   <header class="header">
@@ -212,59 +217,102 @@
     </section>
 
     <section class="tariffs slider">
-      <div class="container">
-        <div class="tariffs__wrapper slider-inner">
-          <ul class="tariffs__list slider-slides">
 
-            <li>
-              <div class="tariffs__filter">Розовый фильтр</div>
-              <div class="tariffs__filter">Смайлики</div>
-              <div class="tariffs__filter">Комментарии</div>
-            </li>
-
-            <li class="tariffs__item">
-              <div class="tariffs__header">
-                <div class="tariffs__name">База</div>
-                <span class="tariffs__cost">1,99 usd</span>
-              </div>
-              <div class="tariffs__value tariffs__value--checked">
-                <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
-                  <use xlink:href="#icon-yes"></use>
-                </svg>
-              </div>
-              <div class="tariffs__value tariffs__value--unchecked"></div>
-              <div class="tariffs__value tariffs__value--unchecked"></div>
-            </li>
-
-            <li class="tariffs__item">
-              <div class="tariffs__header">
-                <div class="tariffs__name mark--hit">Стандарт</div>
-                <span class="tariffs__cost">3,99 usd</span>
-              </div>
-              <div class="tariffs__value tariffs__value--checked"></div>
-              <div class="tariffs__value tariffs__value--checked"></div>
-              <div class="tariffs__value tariffs__value--unchecked"></div>
-            </li>
-
-            <li class="tariffs__item">
-              <div class="tariffs__header">
-                <div class="tariffs__name">Анлим</div>
-                <span class="tariffs__cost">9,99 usd</span>
-              </div>
-              <div class="tariffs__value tariffs__value--checked"></div>
-              <div class="tariffs__value tariffs__value--checked"></div>
-              <div class="tariffs__value tariffs__value--checked"></div>
-            </li>
-          </ul>
-
-        </div>
+      <div class="tariffs__toggle-wrapper container">
         <div class="slider__toggles">
-          <button class="slider__toggle slider__toggle--active" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
-          <button class="slider__toggle" type="button"></button>
+          <input type="radio" id="slider__btn-1" class="slider__radio-btn" name="slider__toggle">
+          <input type="radio" id="slider__btn-2" class="slider__radio-btn" name="slider__toggle">
+          <input type="radio" id="slider__btn-3" class="slider__radio-btn" name="slider__toggle">
+
+          <label for="slider__btn-1" class="slider__toggle"></label>
+          <label for="slider__btn-2" class="slider__toggle"></label>
+          <label for="slider__btn-3" class="slider__toggle"></label>
         </div>
       </div>
 
+      <div class="tariffs-wrapper slider__inner">
+        <ul class="tariffs__list slider__slides">
+
+          <li class="tariffs__item tariffs__filters">
+            <div class="tariffs__filter tariffs__col">Розовый фильтр</div>
+            <div class="tariffs__filter tariffs__col">Смайлики</div>
+            <div class="tariffs__filter tariffs__col">Комментарии</div>
+          </li>
+
+          <li class="tariffs__item">
+            <div class="tariffs__header">
+              <div class="tariffs__tariff">
+                <span class="tariffs__name">База</span>
+                <span class="tariffs__cost">1,99 usd</span>
+              </div>
+            </div>
+            <div class="tariffs__value tariffs__col">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+                <use xlink:href="#icon-yes"></use>
+              </svg>
+            </div>
+            <div class="tariffs__value tariffs__col">
+              <svg class="tariffs__icon-no" x="0px" y="0px" width="26.752px" height="26.752px">
+                <use xlink:href="#icon-no"></use>
+              </svg>
+            </div>
+            <div class="tariffs__value tariffs__col">
+              <svg class="tariffs__icon-no" x="0px" y="0px" width="26.752px" height="26.752px">
+                <use xlink:href="#icon-no"></use>
+              </svg>
+            </div>
+          </li>
+
+          <li class="tariffs__item ">
+            <div class="tariffs__header">
+              <div class="tariffs__tariff">
+                <span class="tariffs__name mark--hit">Стандарт</span>
+                <span class="tariffs__cost">3,99 usd</span>
+              </div>
+            </div>
+            <div class="tariffs__value tariffs__col">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+                <use xlink:href="#icon-yes"></use>
+              </svg>
+            </div>
+            <div class="tariffs__value tariffs__col">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+                <use xlink:href="#icon-yes"></use>
+              </svg>
+            </div>
+            <div class="tariffs__value tariffs__col">
+              <svg class="tariffs__icon-no" x="0px" y="0px" width="26.752px" height="26.752px">
+                <use xlink:href="#icon-no"></use>
+              </svg>
+            </div>
+          </li>
+
+          <li class="tariffs__item">
+            <div class="tariffs__header ">
+              <div class="tariffs_tariff">
+                <span class="tariffs__name">Анлим</span>
+                <span class="tariffs__cost">9,99 usd</span>
+              </div>
+            </div>
+            <div class="tariffs__value tariffs__col">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+                <use xlink:href="#icon-yes"></use>
+              </svg>
+            </div>
+            <div class="tariffs__value tariffs__col">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+                <use xlink:href="#icon-yes"></use>
+              </svg>
+            </div>
+            <div class="tariffs__value tariffs__col">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+                <use xlink:href="#icon-yes"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+
+      </div>
     </section>
 
   </main>

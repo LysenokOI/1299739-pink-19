@@ -1,7 +1,22 @@
+/*Block model*/
+
+.slider__inner {
+  overflow: hidden;
+}
+
+.slider__slides {
+  width: 872px;
+  transition: transform 0.8s ease;
+}
+
 .slider__toggles {
   display: flex;
   width: 66px;
   justify-content: space-between;
+}
+
+.slider__radio-btn {
+  display: none;
 }
 
 .slider__toggle {
@@ -21,8 +36,18 @@
   }
 }
 
-.slider__toggle--active {
+#slider__btn-1:checked ~ .slider__toggle[for="slider__btn-1"],
+#slider__btn-2:checked ~ .slider__toggle[for="slider__btn-2"],
+#slider__btn-3:checked ~ .slider__toggle[for="slider__btn-3"] {
   border: 3px solid @dark;
   background-color: @light;
   opacity: 1;
+}
+
+#slider__btn-1:checked ~ .slider__slides {
+  transform: translate(0);
+}
+
+#slider__btn-2:checked ~ .slider__slides {
+  transform: translate(-278px);
 }
