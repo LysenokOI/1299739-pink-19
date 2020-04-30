@@ -5,7 +5,7 @@
 }
 
 .slider__slides {
-  width: 872px;
+  width: 874px;
   transition: transform 0.8s ease;
 }
 
@@ -28,6 +28,7 @@
   border-radius: 50%;
   background-color: @dark;
   opacity: 0.3;
+  cursor: pointer;
   &:hover {
     opacity: 1;
   }
@@ -36,23 +37,23 @@
   }
 }
 
-#slider__btn-1:checked ~ .slider__toggle[for="slider__btn-1"],
-#slider__btn-2:checked ~ .slider__toggle[for="slider__btn-2"],
-#slider__btn-3:checked ~ .slider__toggle[for="slider__btn-3"] {
+#slider__btn-1:checked ~.tariffs__toggle-wrapper .slider__toggle[for="slider__btn-1"],
+#slider__btn-2:checked ~.tariffs__toggle-wrapper .slider__toggle[for="slider__btn-2"],
+#slider__btn-3:checked ~.tariffs__toggle-wrapper .slider__toggle[for="slider__btn-3"] {
   border: 3px solid @dark;
   background-color: @light;
   opacity: 1;
 }
 
-#slider__btn-1:checked ~ .slider__slides {
+#slider__btn-1:checked ~.tariffs-wrapper .slider__slides {
   transform: translate(0);
 }
 
-#slider__btn-2:checked ~ .slider__slides {
+#slider__btn-2:checked ~.tariffs-wrapper .slider__slides {
   transform: translate(-278px);
 }
 
-#slider__btn-3:checked ~ .slider__slides {
+#slider__btn-3:checked ~.tariffs-wrapper .slider__slides {
   transform: translate(-556px);
 }
 
