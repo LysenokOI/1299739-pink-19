@@ -18,7 +18,9 @@ flex-direction: column;
 .tariffs-wrapper {
   width: 320px;
   margin: 0 auto;
+  margin-top: 65px;
   order: 1;
+  overflow: hidden;
 }
 
 .tariffs__list {
@@ -67,11 +69,16 @@ flex-direction: column;
   display: flex;
   justify-content: center;
 }
+
 /*Decorations*/
 .tariffs {
   text-transform: uppercase;
   line-height: 30px;
   background-color: @grey;
+}
+
+.tariffs__list {
+  transition: transform 0.7s ease;
 }
 
 .tariffs__col {
@@ -109,14 +116,117 @@ flex-direction: column;
   color: @light;
 }
 
-
 .tariffs__name {
   font-family: "OpenSans-Bold";
   font-size: 18px;
-
 }
 
 .tariffs__cost {
   font-family: "OpenSans-Light";
   font-size: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .tariffs__filters {
+    position: unset;
+    margin-top: auto;
+  }
+
+  .tariffs__toggle-wrapper {
+    display: none;
+  }
+
+  .tariffs {
+    padding-bottom: 70px;
+  }
+
+  .tariffs-wrapper {
+    width: 620px;
+    overflow: unset;
+  }
+
+  .tariffs__list {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .tariffs__item {
+    min-width: 155px;
+  }
+
+  .tariffs__filter {
+    padding-left: 15px;
+  }
+
+  .tariffs__header {
+    min-height: 78px;
+  }
+
+  .tariffs__col {
+    min-height: 48px;
+  }
+
+  .tariffs__value {
+    padding-right: 0px;
+    justify-content: center;
+  }
+
+  /*Decorations*/
+  .tariffs__item {
+    &:first-of-type {
+      border-top: 2px solid @disabled;
+    }
+  }
+
+  .tariffs__filter {
+    background-color: @light;
+    text-transform: none;
+  }
+
+  .tariffs__name {
+    font-size: 16px;
+  }
+
+  .tariffs__cost {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs-wrapper {
+    width: 940px;
+  }
+
+  .tariffs {
+    padding-bottom: 98px;
+  }
+
+  .tariffs__item {
+    min-width: 235px;
+  }
+
+  .tariffs__filter {
+    padding-left: 24px;
+  }
+
+  .tariffs__header {
+    min-height: 98px;
+  }
+
+  .tariffs__col {
+    min-height: 61px;
+  }
+
+  /*Decorations*/
+  .tariffs__name {
+    font-size: 18px;
+  }
+
+  .tariffs__cost {
+    font-size: 24px;
+  }
+
+  .tariffs__filters {
+    font-size: 18px;
+  }
 }

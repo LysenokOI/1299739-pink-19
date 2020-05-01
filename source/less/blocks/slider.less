@@ -1,14 +1,4 @@
 /*Block model*/
-
-.slider__inner {
-  overflow: hidden;
-}
-
-.slider__slides {
-  width: 874px;
-  transition: transform 0.8s ease;
-}
-
 .slider__toggles {
   display: flex;
   width: 66px;
@@ -57,10 +47,20 @@
   transform: translate(-556px);
 }
 
-#slider__btn-2:checked ~.tariffs-wrapper .slider__slides .tariffs__filters {
+#slider__btn-2:checked ~.tariffs-wrapper .tariffs__filters {
   left: 298px;
 }
 
-#slider__btn-3:checked ~.tariffs-wrapper .slider__slides .tariffs__filters {
+#slider__btn-3:checked ~.tariffs-wrapper .tariffs__filters {
   left: 576px;
+}
+
+@media (min-width: @tablet-width) {
+  #slider__btn-2:checked ~.tariffs-wrapper .slider__slides {
+    transform: translate(0px);
+  }
+
+  #slider__btn-3:checked ~.tariffs-wrapper .slider__slides {
+    transform: translate(0px);
+  }
 }
