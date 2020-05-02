@@ -26,10 +26,6 @@
     align-items: center;
   }
 
-  .effect_timer {
-    width: 238px;
-  }
-
   .effect__icon-timer {
     width: 238px;
   }
@@ -92,3 +88,59 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  /*Block model*/
+  .effect {
+    padding-top: 65px;
+    padding-bottom: 61px;
+  }
+
+  .effect__icon-timer {
+    width: 298px;
+  }
+
+  .effect__timer-24 {
+    height: 253px;
+    width: 253px;
+    margin-top: 40px;
+  }
+
+  .effect__item {
+    width: 525px;
+    min-height: 197px;
+    margin-right: 50px;
+    margin-top: 39px;
+  }
+
+  .effect__title-first {
+    display: inline-block;
+  }
+
+  .effect__title {
+    margin-bottom: 20px;
+  }
+
+  .effect__description {
+    margin-bottom: 30px;
+  }
+/*Decorations*/
+  .effect {
+    background-color: @grey;
+  }
+
+  .effect__timer-24 {
+    border-width: 17px;
+    font-size: 120px;
+  }
+
+  .effect__description {
+    font-size: 18px;
+    line-height: 30px;
+
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

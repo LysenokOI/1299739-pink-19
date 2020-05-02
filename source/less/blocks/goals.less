@@ -6,7 +6,8 @@
 .goals__bg-triangle-white {
   position: absolute;
   z-index: 0;
-  top: -20px;
+  top: 0px;
+  width: 320px;
 }
 
 .goals__list {
@@ -34,6 +35,13 @@
     justify-content: center;
     height: 277px;
     overflow: hidden;
+}
+
+.goals__image {
+  display: none;
+  &:last-child {
+    display: flex;
+  }
 }
 
 /*Decorations*/
@@ -90,13 +98,48 @@
     padding-top: 66px;
   }
 
+  .goals__background {
+    margin-top: 75px;
+  }
+
   .goals__container {
     flex-direction: column;
   }
 
+  .goals__images {
+    margin-top: 0px;
+    height: 302px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .goals__image {
+    display: flex;
+  }
+
   .goals__list {
-    width: auto;
+    width: 877px;
+    margin: auto;
     display: flex;
     flex-direction: row;
+    margin-top: 57px;
+    justify-content: space-between;
+  }
+
+  .goals__item {
+    width: 238px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .goals__title{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 23px;
+  }
+
+  .goals__description {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
