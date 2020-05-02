@@ -22,6 +22,10 @@
     <symbol id="bg-triangle-white" viewBox="0 0 1200 94.074">
       <polygon points="1200,0 0,0 0,94.074 " />
     </symbol>
+    <symbol id="icon-timer" viewBox="0 0 298 345.097">
+      <path
+        d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
+    </symbol>
 
   </svg>
 
@@ -81,8 +85,6 @@
   </header>
 
   <main class="main">
-
-
 
     <section class="main__wrapper main__wrapper--index">
 
@@ -158,39 +160,76 @@
 
     <section class="goals">
 
-      <div class="section__title__wrapper container">
-        <h2 class="section__title">
-          Устали от серости мегаполиса?<br><br>Нам есть, что вам предложить!
-        </h2>
-      </div>
+      <ul class="section__title-wrapper container">
+        <li class="section__title section__item">
+          Устали от серости мегаполиса?
+        </li>
+        <li class="section__title section__item">
+          Нам есть, что вам предложить!
+        </li>
+      </ul>
 
-      <div class="goals__list__wrapper">
-        <ul class="goals__list container">
-          <li class="list__item">
-            <h3 class="list__title">
-              Поднимает настроение
-            </h3>
-            <p class="list__description">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="list__item">
-            <h3 class="list__title">
-              Меняем мир вокруг
-            </h3>
-            <p class="list__description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
-          </li>
-          <li class="list__item">
-            <h3 class="list__title">
-              Заводит новых друзей
-            </h3>
-            <p class="list__description">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
+      <div class="goals__background">
+        <svg class="goals__bg-triangle-white bg-triangle-white" x="0px" y="0px" width="1200px" height="94.074px">
+          <use xlink:href="#bg-triangle-white"></use>
+        </svg>
+        <div class="goals__container container">
+          <ul class="goals__list list">
+            <li class="goals__item list__item">
+              <h3 class="goals__title list__title">
+                Поднимает настроение
+              </h3>
+              <p class="goals__description list__description">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="goals__item list__item">
+              <h3 class="goals__title list__title">
+                Меняем мир вокруг
+              </h3>
+              <p class="goals__description list__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </li>
+            <li class="goals__item list__item">
+              <h3 class="goals__title list__title">
+                Заводит новых друзей
+              </h3>
+              <p class="goals__description list__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+          <div class="goals__images">
+            <img src="../img/iphone-screen-mobile@1x.png" height="320px" alt="mobile smiles">
+          </div>
+        </div>
+    </section>
+
+    <section class="effect">
+      <div class="effect__container container">
+
+        <div class="effect__timer">
+          <svg class="effect__icon-timer" x="0px" y="0px" width="298px" height="345.097px">
+            <use xlink:href="#icon-timer"></use>
+          </svg>
+          <div class="effect__timer-24">
+            24
+          </div>
+        </div>
+
+        <div class="effect__item">
+          <h2 class="effect__title"><span class="effect__title-first">Эффект</span> на 24 часа!</h2>
+          <p class="effect__description">
+            Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится
+            целые сутки!
+          </p>
+          <a class="effect__link" href="http://www.science.yoread.ru/news.php?readmore=1350">Узнать больше об
+            исследовании</a>
+        </div>
+
       </div>
     </section>
 
@@ -327,7 +366,7 @@
     <div class="contacts">
       <div class="container">
 
-        <div class="section__title__wrapper">
+        <div class="section__title-wrapper">
           <h2 class="section__title">Остались вопросы? Свяжитесь с нами!</h2>
         </div>
 
