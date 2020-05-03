@@ -52,6 +52,7 @@ flex-direction: column;
 }
 
 .tariffs__name {
+  margin-top: 7px;
   display: block;
   text-align: center;
 }
@@ -91,9 +92,6 @@ flex-direction: column;
 
 .tariffs__item {
   border-left: 2px solid @disabled;
-  /*&:first-of-type{
-    border-top: 2px solid @disabled; DESCTOP
-  }*/
   &:last-of-type {
     border-right: 2px solid @disabled;
   }
@@ -130,7 +128,64 @@ flex-direction: column;
   font-size: 24px;
 }
 
+.tariffs__hit {
+  position: relative;
+  &::before {
+    content: url("../img/bg-hit.svg");
+    position: absolute;
+    left: -2px;
+    top: 0px;
+  }
+  &::after {
+    content: "хит";
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    transform: rotate(-45deg);
+    color: @light;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+
+#tariffs__btn-1:checked ~.tariffs__toggle-wrapper .slider__toggle[for="tariffs__btn-1"],
+#tariffs__btn-2:checked ~.tariffs__toggle-wrapper .slider__toggle[for="tariffs__btn-2"],
+#tariffs__btn-3:checked ~.tariffs__toggle-wrapper .slider__toggle[for="tariffs__btn-3"] {
+  border: 3px solid @dark;
+  background-color: @light;
+  opacity: 1;
+}
+
+#tariffs__btn-1:checked ~.tariffs-wrapper .tariffs__list {
+  transform: translate(0);
+}
+
+#tariffs__btn-2:checked ~.tariffs-wrapper .tariffs__list {
+  transform: translate(-278px);
+}
+
+#tariffs__btn-3:checked ~.tariffs-wrapper .tariffs__list {
+  transform: translate(-556px);
+}
+
+#tariffs__btn-2:checked ~.tariffs-wrapper .tariffs__filters {
+  left: 298px;
+}
+
+#tariffs__btn-3:checked ~.tariffs-wrapper .tariffs__filters {
+  left: 576px;
+}
+
 @media (min-width: @tablet-width) {
+  #tariffs__btn-2:checked ~.tariffs-wrapper .tariffs__list {
+    transform: translate(0px);
+  }
+
+  #tariffs__btn-3:checked ~.tariffs-wrapper .tariffs__list {
+    transform: translate(0px);
+  }
+
   .tariffs__filters {
     position: unset;
     margin-top: auto;
@@ -194,6 +249,17 @@ flex-direction: column;
   .tariffs__cost {
     font-size: 18px;
   }
+
+  .tariffs__hit {
+    &::before {
+      content: url("../img/bg-hit-tablet.svg");
+      left: 0px;
+    }
+    &::after {
+      left: 5px;
+      top: 7px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -232,5 +298,16 @@ flex-direction: column;
 
   .tariffs__filters {
     font-size: 18px;
+  }
+
+  .tariffs__hit {
+    &::before {
+      content: url("../img/bg-hit.svg");
+      left: 0px;
+    }
+    &::after {
+      left: 13px;
+      top: 10px;
+    }
   }
 }

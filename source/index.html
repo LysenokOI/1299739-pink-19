@@ -236,49 +236,70 @@
       </div>
     </section>
 
-    <section class="comments">
-      <div class="container">
-        <div class="comments__wrapper slider">
-          <ul class="comments__list slider__list">
-            <li class="list__item">
+    <div class="container">
+      <section class="comments">
+
+        <input type="radio" id="comments__btn-1" class="slider__radio-btn" name="comments__toggle">
+        <input type="radio" id="comments__btn-2" class="slider__radio-btn" name="comments__toggle">
+        <input type="radio" id="comments__btn-3" class="slider__radio-btn" name="comments__toggle">
+
+        <div class="comments__toggles-wrapper slider__toggles">
+          <label for="comments__btn-1" class="slider__toggle"></label>
+          <label for="comments__btn-2" class="slider__toggle"></label>
+          <label for="comments__btn-3" class="slider__toggle"></label>
+        </div>
+
+        <button class="comments__prev"></button>
+        <button class="comments__next"></button>
+
+        <div class="comments__list-wrapper">
+          <ul class="comments__list">
+            <li class="comments__item list__item">
               <h3 class="comments__title list__title">Николай Петров</h3>
+              <h4 class="comments__subtitle">25 лет, водитель трамвая</h4>
               <p class="comments__description list__description">«Это приложение перевернуло мой мир и позволило
-                по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-                фотографии!»
+                по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях
+                к выложенной фотографии!»
               </p>
             </li>
+            <li class="comments__item list__item">
+              <h3 class="comments__title list__title">Анна Николаева</h3>
+              <h4 class="comments__subtitle">26 лет, многодетная кошка</h4>
+              <p class="comments__description list__description">«Прыгать или нет? Напишите в комментарии свой совет и
+                смотрите прямую трансляцию в перископе, задавайте свои вопросы!»
+              </p>
+            </li>
+            <li class="comments__item list__item">
+              <h3 class="comments__title list__title">Петр Котов</h3>
+              <h4 class="comments__subtitle">27 лет, слесарь 4 разряда</h4>
+              <p class="comments__description list__description">«Если есть на свете рай - это Краснодарский край»</p>
+            </li>
           </ul>
-          <div class="comments__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
-          </div>
         </div>
-      </div>
 
-    </section>
+      </section>
+    </div>
 
     <section class="tariffs slider">
       <svg class="tariffs__bg-triangle-white bg-triangle-white" x="0px" y="0px" width="1200px" height="94.074px">
         <use xlink:href="#bg-triangle-white"></use>
       </svg>
 
-      <input type="radio" id="slider__btn-1" class="slider__radio-btn" name="slider__toggle">
-      <input type="radio" id="slider__btn-2" class="slider__radio-btn" name="slider__toggle">
-      <input type="radio" id="slider__btn-3" class="slider__radio-btn" name="slider__toggle">
+      <input type="radio" id="tariffs__btn-1" class="slider__radio-btn" name="tariffs__toggle">
+      <input type="radio" id="tariffs__btn-2" class="slider__radio-btn" name="tariffs__toggle">
+      <input type="radio" id="tariffs__btn-3" class="slider__radio-btn" name="tariffs__toggle">
 
 
       <div class="tariffs__toggle-wrapper container">
         <div class="slider__toggles">
-          <label for="slider__btn-1" class="slider__toggle"></label>
-          <label for="slider__btn-2" class="slider__toggle"></label>
-          <label for="slider__btn-3" class="slider__toggle"></label>
+          <label for="tariffs__btn-1" class="slider__toggle"></label>
+          <label for="tariffs__btn-2" class="slider__toggle"></label>
+          <label for="tariffs__btn-3" class="slider__toggle"></label>
         </div>
       </div>
 
-      <div class="tariffs-wrapper slider__inner">
-        <ul class="tariffs__list slider__slides">
+      <div class="tariffs-wrapper">
+        <ul class="tariffs__list">
 
           <li class="tariffs__item tariffs__filters">
             <div class="tariffs__filter tariffs__col">Розовый фильтр</div>
@@ -310,10 +331,10 @@
             </div>
           </li>
 
-          <li class="tariffs__item ">
-            <div class="tariffs__header">
-              <div class="tariffs__tariff">
-                <span class="tariffs__name mark--hit">Стандарт</span>
+          <li class="tariffs__item">
+            <div class="tariffs__header tariffs__hit">
+              <div class="tariffs__tariff ">
+                <span class="tariffs__name">Стандарт</span>
                 <span class="tariffs__cost">3,99 usd</span>
               </div>
             </div>
