@@ -1,5 +1,9 @@
+
 /*Block model*/
 .comments {
+  position: relative;
+  z-index: 0;
+
   padding-top: 44px;
   padding-bottom: 50px;
   display: flex;
@@ -113,8 +117,41 @@
 
 @media (min-width: @desktop-width) {
   /*Block model*/
+  .comments {
+    padding-top: 72px;
+  }
+
   .comments__item {
     width: 940px;
+    margin-top: 50px;
+  }
+
+  .comments__description {
+    width: 690px;
+    margin: 0 auto;
+  }
+
+  .comments__prev,
+  .comments__next {
+    position: absolute;
+    top: 213px;
+    z-index: 100;
+
+    display: block;
+    width: 22px;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .comments__prev {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(0, 0, 0, 0.3)' x='0px' y='0px' width='21.706px' height='41.719px' viewBox='0 0 21.706 41.719' enable-background='new 0 0 21.706 41.719' xml:space='preserve'%3E%3Cpath d='M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z'/%3E%3C/svg%3E");
+  }
+
+  .comments__next {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(0, 0, 0, 0.3)' x='0px' y='0px' width='21.706px' height='41.719px' viewBox='0 0 21.706 41.719' enable-background='new 0 0 21.706 41.719' xml:space='preserve'%3E%3Cpath d='M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z'/%3E%3C/svg%3E");
+    right: 0px;
   }
 
   .comments__list-wrapper {
@@ -126,11 +163,16 @@
     }
   }
 
+  .comments__toggles-wrapper {
+    display: none;
+  }
+
   #comments__btn-2:checked ~.comments__list-wrapper .comments__list {
-    transform: translate(-940px);
+    transform: translate(0px);
   }
 
   #comments__btn-3:checked ~.comments__list-wrapper .comments__list {
-    transform: translate(-1880px);
+    transform: translate(0px);
   }
 }
+

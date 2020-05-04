@@ -237,7 +237,7 @@
     </section>
 
     <div class="container">
-      <section class="comments">
+      <section class="comments js_section">
 
         <input type="radio" id="comments__btn-1" class="slider__radio-btn" name="comments__toggle">
         <input type="radio" id="comments__btn-2" class="slider__radio-btn" name="comments__toggle">
@@ -249,12 +249,12 @@
           <label for="comments__btn-3" class="slider__toggle"></label>
         </div>
 
-        <button class="comments__prev"></button>
-        <button class="comments__next"></button>
+        <button class="comments__prev js__prev"></button>
+        <button class="comments__next js__next"></button>
 
         <div class="comments__list-wrapper">
           <ul class="comments__list">
-            <li class="comments__item list__item">
+            <li class="comments__item list__item js__slider-item js__visible">
               <h3 class="comments__title list__title">Николай Петров</h3>
               <h4 class="comments__subtitle">25 лет, водитель трамвая</h4>
               <p class="comments__description list__description">«Это приложение перевернуло мой мир и позволило
@@ -262,14 +262,14 @@
                 к выложенной фотографии!»
               </p>
             </li>
-            <li class="comments__item list__item">
+            <li class="comments__item list__item js__slider-item ">
               <h3 class="comments__title list__title">Анна Николаева</h3>
               <h4 class="comments__subtitle">26 лет, многодетная кошка</h4>
               <p class="comments__description list__description">«Прыгать или нет? Напишите в комментарии свой совет и
                 смотрите прямую трансляцию в перископе, задавайте свои вопросы!»
               </p>
             </li>
-            <li class="comments__item list__item">
+            <li class="comments__item list__item js__slider-item">
               <h3 class="comments__title list__title">Петр Котов</h3>
               <h4 class="comments__subtitle">27 лет, слесарь 4 разряда</h4>
               <p class="comments__description list__description">«Если есть на свете рай - это Краснодарский край»</p>
@@ -424,7 +424,7 @@
 
   </footer>
 
-  <script src="js/app.js" defer></script>
+
 </body>
 
 </html>
