@@ -19,15 +19,19 @@
       <path
         d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
     </symbol>
-    <symbol id="bg-triangle-white" viewBox="0 0 1200 94.074">
+    <symbol id="bg-triangle-white">
       <polygon points="1200,0 0,0 0,94.074 " />
     </symbol>
     <symbol id="icon-timer" viewBox="0 0 298 345.097">
       <path
         d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
     </symbol>
-    <symbol id="bg-triangle-white-footer" viewBox="0 0 595.28 61.905">
+    <symbol id="bg-triangle-white-footer">
       <polygon points="297.64,61.905 0,0 595.28,0 " />
+    </symbol>
+    <symbol id="icon-map-marker" viewBox="0 0 35.983 35.983">
+      <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991" />
+      <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866" />
     </symbol>
 
   </svg>
@@ -176,7 +180,7 @@
       </ul>
 
       <div class="goals__background">
-        <svg class="goals__bg-triangle-white bg-triangle-white" x="0px" y="0px" width="1200px" height="94.074px">
+        <svg class="goals__bg-triangle-white bg-triangle-white" x="0px" y="0px">
           <use xlink:href="#bg-triangle-white"></use>
         </svg>
         <div class="goals__container container">
@@ -288,7 +292,7 @@
     </div>
 
     <section class="tariffs slider">
-      <svg class="tariffs__bg-triangle-white bg-triangle-white" x="0px" y="0px" width="1200px" height="94.074px">
+      <svg class="tariffs__bg-triangle-white bg-triangle-white" x="0px" y="0px" height="94.074px">
         <use xlink:href="#bg-triangle-white"></use>
       </svg>
 
@@ -396,7 +400,7 @@
 
     <div class="contacts container">
 
-      <div class="section__title-wrapper">
+      <div class="contacts__title-wrapper section__title-wrapper">
         <h2 class="section__title">Остались вопросы? Свяжитесь с нами!</h2>
       </div>
 
@@ -417,16 +421,23 @@
 
     </div>
 
-    <div class="map">
-
-      <svg class="map__bg-triangle-white-footer" x="0px" y="0px" width="595.28px" height="61.905px">
-        <use xlink:href="#bg-triangle-white-footer" class="bg-triangle-white-footer"></use>
+    <div class="map-wrapper">
+      <svg class="map__bg-triangle-white-footer">
+        <use xlink:href="#bg-triangle-white-footer"></use>
       </svg>
 
-      <img class="map__image" src="../img/bg-map-mobile@1x.png" width="320px" alt="карта">
+      <div class="map">
+        <img class="map__image" src="../img/bg-map-mobile@1x.png" width="320px" alt="карта">
+
+        <svg class="map__marker">
+          <use xlink:href="#icon-map-marker" x="0px" y="0px" width="35.983px" height="35.983px"></use>
+        </svg>
+
+
+      </div>
     </div>
 
-    <div class="footer container">
+    <div class="footer footer--index container">
 
       <a class="footer__logo__wrapper" href="index.html">
         <svg class="footer__logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -495,7 +506,7 @@
       <div class="footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__icon social__icon social__icon--academy" xmlns="http://www.w3.org/2000/svg" height="34"
+          <svg class="copyright__icon social__icon social__icon--academy" xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 60 60">
             <path
               d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
@@ -506,6 +517,7 @@
     </div>
 
   </footer>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
