@@ -10,6 +10,24 @@
 </head>
 
 <body>
+  <svg style="display: none;">
+    <symbol id="icon-editor-crop" viewBox="0 0 48 48">
+      <path fill="none" d="M0,0h48v48H0V0z" />
+      <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+    </symbol>
+    <symbol id="icon-editor-fill" viewBox="0 0 48 48">
+      <path fill="none" d="M0,0h48v48H0V0z" />
+      <path
+        d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+      <rect y="40" width="48" height="3" />
+    </symbol>
+    <symbol id="icon-editor-contrast" viewBox="-35.422 -7.96 31.92 31.92">
+      <path
+        d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+      <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+    </symbol>
+
+  </svg>
 
   <header class="header">
     <div class="container">
@@ -63,11 +81,7 @@
         </ul>
 
       </nav>
-
     </div>
-
-
-
   </header>
 
   <main class="main">
@@ -88,21 +102,18 @@
       </article>
     </section>
 
-    <div class="container">
-      <div class="section__description__wrapper">
-        <p class="section__description">
-          Взгляните на фотографии, которые выкладывают пользователи!<br>
+    <section class="posts container">
+
+      <div class="section__description__wrapper posts__description">
+        <p class="section__description ">
+          Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
         </p>
       </div>
-    </div>
 
-    <section class="posts">
-
-      <div class="container">
-
-        <div class="post">
-          <img class="post__image post__image--day" src="#" alt="users's photo">
+      <div class="post post--day">
+        <img class="post__image post__image--day" src="/img/panorama-mobile@1x.jpg" alt="users's photo">
+        <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
               Анна
@@ -110,7 +121,8 @@
             <span class="post__time">(5 минут назад)</span>
           </div>
           <p class="post__text list__description">
-            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
+            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте
+            свои
             вопросы!
           </p>
           <div class="post__likes">
@@ -118,8 +130,11 @@
           </div>
         </div>
 
-        <div class="post">
-          <img class="post__image" src="#" alt="users's photo">
+      </div>
+
+      <div class="post">
+        <img class="post__image" src="/img/photo-car-mobile@1x.jpg" alt="users's photo">
+        <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
               Левон
@@ -134,8 +149,11 @@
           </div>
         </div>
 
-        <div class="post">
-          <img class="post__image" src="#" alt="users's photo">
+      </div>
+
+      <div class="post">
+        <img class="post__image" src="/img/photo-drumset-mobile@1x.jpg" alt="users's photo">
+        <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
               Антон
@@ -150,8 +168,11 @@
           </div>
         </div>
 
-        <div class="post">
-          <img class="post__image" src="#" alt="users's photo">
+      </div>
+
+      <div class="post">
+        <img class="post__image" src="/img/photo-window-mobile@1x.jpg" alt="users's photo">
+        <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
               Борис
@@ -166,8 +187,11 @@
           </div>
         </div>
 
-        <div class="post">
-          <img class="post__image" src="#" alt="users's photo">
+      </div>
+
+      <div class="post">
+        <img class="post__image" src="/img/photo-fair-mobile@1x.jpg" alt="users's photo">
+        <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
               Сергей
@@ -182,8 +206,11 @@
           </div>
         </div>
 
-        <div class="post">
-          <img class="post__image" src="#" alt="users's photo">
+      </div>
+
+      <div class="post">
+        <img class="post__image" src="/img/photo-pov-mobile@1x.jpg" alt="users's photo">
+        <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
               Максим
@@ -198,8 +225,11 @@
           </div>
         </div>
 
-        <div class="post">
-          <img class="post__image" src="#" alt="users's photo">
+      </div>
+
+      <div class="post">
+        <img class="post__image" src="/img/photo-wing-mobile@1x.jpg" alt="users's photo">
+        <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
               Надежда
@@ -213,7 +243,6 @@
             Нравится: 2560
           </div>
         </div>
-
       </div>
 
     </section>
@@ -223,7 +252,7 @@
       <div class="container">
         <div class="section__description__wrapper">
           <p class="section__description">
-            Затмите их всех!
+            Затмите их всех! <br>
             Выкладывайте все, что накопилось в телефоне!
           </p>
         </div>
@@ -232,42 +261,42 @@
       <form class="create-post__form" method="get" action="https://echo.htmlacademy.ru">
         <div class="container">
 
-          <img class="create-post__image" src="#" alt="your photo">
+          <img class="create-post__image" src="/img/photo-road-mobile@1x.jpg" alt="your photo">
 
-          <div class="create-post__filters__wrapper">
+          <div class="create-post__filters-wrapper">
             <div class="create-post__filters">
 
-              <button class="create-post__button" type="button">
-
+              <button class="create-post__edit">
+                <svg class="create-post__filter create-post__filter--crop" x="0px" y="0px" width="48px" height="48px">
+                  <use xlink:href="#icon-editor-crop"></use>
+                </svg>
               </button>
 
-              <button class="create-post__filter create-post__filter--fill" type="button">
-
+              <button class="create-post__edit">
+                <svg class="create-post__filter create-post__filter--fill" x="0px" y="0px" width="48px" height="48px">
+                  <use xlink:href="#icon-editor-fill"></use>
+                </svg>
               </button>
 
-              <button class="create-post__filter create-post__filter--contrast" type="button">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px"
-                  viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
-                  xml:space="preserve">
-                  <path
-                    d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
-                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+              <button class="create-post__edit" type="button">
+                <svg class="create-post__filter create-post__filter--contrast" x="0px" y="0px" width="31.92px"
+                  height="31.92px">
+                  <use xlink:href="#icon-editor-contrast"></use>
                 </svg>
               </button>
 
             </div>
 
-            <div class="filter__range-slider">
+            <div class="create-post__range-slider">
               <input class="range-slider" type="range" min="1" max="100" value="1" id="range-slider">
             </div>
           </div>
 
           <div class="create-post__buttons">
-            <button class="button__oval button button__oval--upload" type="submit">
+            <button class="create-post__button button__oval button button__oval--upload" type="submit">
               Запостить
             </button>
-            <button class="button__oval button button__oval--cancel" type="reset">
+            <button class="create-post__button button__oval button button__oval--cancel" type="reset">
               Отмена
             </button>
           </div>
@@ -358,7 +387,7 @@
 
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="js/create-post.js"></script>
 </body>
 
 </html>

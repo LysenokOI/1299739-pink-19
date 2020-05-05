@@ -4,13 +4,32 @@
   padding-bottom: 41px;
 }
 
-.create-post__filters__wrapper {
-  padding-top: 42px;
-  padding-bottom: 28px;
+.create-post__filters-wrapper {
+  padding-top: 34px;
+  padding-bottom: 17px;
+  padding-left: 15px;
+  padding-right: 27px;
+
+  &::after {
+    content: "";
+    width: 320px;
+    height: 2px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+.create-post__filters {
+  display: flex;
+  justify-content: space-around;
 }
 
 .create-post__buttons {
-  padding-top: 38px;
+  padding-top: 39px;
+}
+
+.create-post__range-slider {
+  margin-top: 25px;
 }
 
 /*Decorations*/
@@ -18,15 +37,23 @@
   background-color: @grey;
 }
 
-.create-post__image {
-  content: url("@{path}/img/photo-road-mobile@1x.jpg");
+.create-post__edit {
+  padding: 0;
+
+  cursor: pointer;
+  fill: @dark--opacity;
+  border: none;
+  &:hover {
+    fill: rgba(0, 0, 0, 0.5);
+  }
+  &:active {
+    fill: @pink;
+  }
 }
 
 .create-post__button {
-  border: none;
-  padding: 0;
+  &:first-child {
+    margin-bottom: 12px;
+  }
 }
 
-.create-post__filters__wrapper {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1)
-}
