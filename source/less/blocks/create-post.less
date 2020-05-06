@@ -4,6 +4,10 @@
   padding-bottom: 41px;
 }
 
+.create-post__image {
+  width: 280px;
+}
+
 .create-post__filters-wrapper {
   padding-top: 34px;
   padding-bottom: 17px;
@@ -19,43 +23,19 @@
 .create-post__range-sliders {
   width: 320px;
   padding-bottom: 28px;
-  margin-left: -20px;
+  margin-left: -35px;
+  display: flex;
+  justify-content: center;
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .create-post__range-slider {
-  margin-top: 25px;
-}
-
-.range-slider__container {
-  position: relative;
-}
-
-.range-slider__track {
   width: 242px;
-  height: 2px;
-  background-color: @dark;
-}
-
-.range-slider__progress {
-  width: 100%;
-  height: 100%;
-  transform-origin: 0;
-}
-
-.range-slider__thumb {
-  position: absolute;
-  top: -7px;
-  transform: translate(-50%);
-  width: 15px;
-  height: 15px;
-
-  border: 2px solid @pink;
-  border-radius: 50%;
-  background-color: @light;
-  cursor: pointer;
-  &:active {
-    background-color: @pink;
+  margin-top: 25px;
+  display: none;
+  &--active {
+    display: block;
   }
 }
 
@@ -63,7 +43,12 @@
   padding-top: 12px;
 }
 
-/*Decorations*/
+.create-post__button {
+  &:first-child {
+    margin-bottom: 12px;
+  }
+}
+
 .create-post__form {
   background-color: @grey;
 }
@@ -85,10 +70,84 @@
   }
 }
 
-.create-post__button {
-  &:first-child {
-    margin-bottom: 12px;
+@media (min-width: @tablet-width) {
+  .create-post-wrapper {
+    padding-top: 45px;
+    padding-bottom: 69px;
   }
+
+  .create-post__form {
+    padding-top: 57px;
+  }
+
+  .create-post__form .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .create-post__image {
+    width: 300px;
+  }
+
+  .create-post__filters-wrapper {
+    display: flex;
+    height: 198px;
+    width: 275px;
+    padding: 0;
+  }
+
+  .create-post__filters {
+    padding-bottom: 17px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .create-post__filter {
+    width: 22px;
+
+    &--fill {
+      width: 24px;
+    }
+    &--contrast {
+      width: 16px;
+    }
+  }
+
+  .create-post__range-sliders {
+    width: auto;
+    padding-top: 19px;
+    padding-bottom: 34px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .create-post__range-slider {
+    display: block;
+    width: 202px;
+    margin-top: 0;
+  }
+
+  .create-post__edit {
+    cursor: default;
+    fill: @pink;
+    &:hover {
+      fill: @pink;
+    }
+    &--crop{
+      margin-top: -4px;
+    }
+    &--fill {
+      padding-bottom: 6px;
+    }
+  }
+
+
 }
 
 

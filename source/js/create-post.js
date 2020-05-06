@@ -31,9 +31,7 @@ function rangeSlider() {
         percentage = (translate / sliderTrackWidth) * 100;
       }
       rounded = parseFloat(percentage.toFixed(0));
-      console.log(rounded);
       setPercentage();
-      return rounded;
     }
   });
 
