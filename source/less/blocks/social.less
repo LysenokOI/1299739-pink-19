@@ -11,6 +11,12 @@
 
   border: solid 3px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  &:hover {
+    border-color: @dark;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 
 }
 
@@ -27,5 +33,11 @@
   }
   &--academy {
     height: 42px;
+    &:hover {
+      fill: @dark;
+    }
+    &:active {
+      fill: @dark--opacity;
+    }
   }
 }

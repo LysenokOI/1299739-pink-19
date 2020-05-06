@@ -7,7 +7,7 @@
   }
 }
 
-.footer__logo__wrapper {
+.footer__logo-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 43px;
@@ -26,11 +26,22 @@
 }
 
 /*Decorations*/
-.footer__logo {
-  &:active{
-    //fill: #D22856;
-    opacity: 0.3;
+.footer__logo-wrapper {
+  & .footer__logo-text {
+    fill: @dark;
   }
+  &:hover .footer__logo-text {
+    fill: @pink;
+  }
+  &:active {
+    opacity: 0.3;
+    & .footer__logo-text {
+      fill: @dark;
+    }
+  }
+}
+.footer__logo-text {
+  fill: @pink;
 }
 
 @media (min-width: @tablet-width) {

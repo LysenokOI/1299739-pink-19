@@ -9,14 +9,6 @@
   padding-bottom: 17px;
   padding-left: 15px;
   padding-right: 27px;
-
-  &::after {
-    content: "";
-    width: 320px;
-    height: 2px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  }
-
 }
 
 .create-post__filters {
@@ -24,12 +16,51 @@
   justify-content: space-around;
 }
 
-.create-post__buttons {
-  padding-top: 39px;
+.create-post__range-sliders {
+  width: 320px;
+  padding-bottom: 28px;
+  margin-left: -20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .create-post__range-slider {
   margin-top: 25px;
+}
+
+.range-slider__container {
+  position: relative;
+}
+
+.range-slider__track {
+  width: 242px;
+  height: 2px;
+  background-color: @dark;
+}
+
+.range-slider__progress {
+  width: 100%;
+  height: 100%;
+  transform-origin: 0;
+}
+
+.range-slider__thumb {
+  position: absolute;
+  top: -7px;
+  transform: translate(-50%);
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid @pink;
+  border-radius: 50%;
+  background-color: @light;
+  cursor: pointer;
+  &:active {
+    background-color: @pink;
+  }
+}
+
+.create-post__buttons {
+  padding-top: 12px;
 }
 
 /*Decorations*/
@@ -49,6 +80,9 @@
   &:active {
     fill: @pink;
   }
+  &--active {
+    fill: @pink;
+  }
 }
 
 .create-post__button {
@@ -56,4 +90,5 @@
     margin-bottom: 12px;
   }
 }
+
 
