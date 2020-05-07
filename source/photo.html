@@ -108,12 +108,16 @@
     <section class="main__wrapper ">
 
       <div class="main__background">
-        <img src="../img/bg-back-mobile@1x.jpg">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/bg-back-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="/img/bg-back-tablet@1x.jpg">
+          <img src="/img/bg-back-mobile@1x.jpg">
+        </picture>
       </div>
 
-      <article class="main__title__wrapper">
+      <article class="main__title__wrapper main__title__wrapper--photo">
         <div class="container">
-          <h1 class="main__title ">
+          <h1 class="main__title">
             Фотографии пользователей
           </h1>
         </div>
@@ -131,7 +135,13 @@
       </div>
 
       <div class="post post--day">
-        <img class="post__image post__image--day" src="/img/panorama-mobile@1x.jpg" alt="users's photo">
+        <a href="/img/panorama-desktop@1x.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/panorama-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="/img/panorama-tablet@1x.jpg">
+            <img class="post__image post__image--day" src="/img/panorama-mobile@1x.jpg" alt="users's photo">
+          </picture>
+        </a>
         <div class="post__comment post__comment--day">
           <div class="post__user-info">
             <h3 class="post__user">
@@ -151,7 +161,14 @@
       </div>
 
       <div class="post">
-        <img class="post__image" src="/img/photo-car-mobile@1x.jpg" alt="users's photo">
+        <a href="/img/photo-car-desktop@1x.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/photo-car-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-car-tablet@1x.jpg">
+            <img class="post__image" src="/img/photo-car-mobile@1x.jpg" alt="users's photo">
+          </picture>
+        </a>
+
         <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
@@ -171,7 +188,11 @@
 
       <div class="post">
         <a href="/img/photo-drumset-desktop@1x.jpg">
-          <img class="post__image" src="/img/photo-drumset-mobile@1x.jpg" alt="users's photo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/photo-drumset-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-drumset-tablet@1x.jpg">
+            <img class="post__image" src="/img/photo-drumset-mobile@1x.jpg" alt="users's photo">
+          </picture>
         </a>
 
         <div class="post__comment">
@@ -192,7 +213,14 @@
       </div>
 
       <div class="post">
-        <img class="post__image" src="/img/photo-window-mobile@1x.jpg" alt="users's photo">
+        <a href="/img/photo-window-desktop@1x.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/photo-window-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-window-tablet@1x.jpg">
+            <img class="post__image" src="/img/photo-window-mobile@1x.jpg" alt="users's photo">
+          </picture>
+        </a>
+
         <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
@@ -211,7 +239,14 @@
       </div>
 
       <div class="post">
-        <img class="post__image" src="/img/photo-fair-mobile@1x.jpg" alt="users's photo">
+        <a href="/img/photo-fair-desktop@1x.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/photo-fair-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-fair-tablet@1x.jpg">
+            <img class="post__image" src="/img/photo-fair-mobile@1x.jpg" alt="users's photo">
+          </picture>
+        </a>
+
         <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
@@ -230,7 +265,14 @@
       </div>
 
       <div class="post">
-        <img class="post__image" src="/img/photo-pov-mobile@1x.jpg" alt="users's photo">
+        <a href="/img/photo-pov-desktop@1x.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/photo-pov-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-pov-tablet@1x.jpg">
+            <img class="post__image" src="/img/photo-pov-mobile@1x.jpg" alt="users's photo">
+          </picture>
+        </a>
+
         <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
@@ -249,7 +291,14 @@
       </div>
 
       <div class="post">
-        <img class="post__image" src="/img/photo-wing-mobile@1x.jpg" alt="users's photo">
+        <a href="/img/photo-wing-desktop@1x.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/photo-wing-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-wing-tablet@1x.jpg">
+            <img class="post__image" src="/img/photo-wing-mobile@1x.jpg" alt="users's photo">
+          </picture>
+        </a>
+
         <div class="post__comment">
           <div class="post__user-info">
             <h3 class="post__user">
@@ -282,67 +331,72 @@
       <form class="create-post__form" method="get" action="https://echo.htmlacademy.ru">
         <div class="container">
 
-          <img class="create-post__image" src="/img/photo-road-mobile@1x.jpg" alt="your photo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/photo-road-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="/img/photo-road-tablet@1x.jpg">
+            <img class="create-post__image" src="/img/photo-road-mobile@1x.jpg" alt="your photo">
+          </picture>
 
-          <div class="create-post__filters-wrapper">
-            <div class="create-post__filters">
+          <div class="create-post__controls">
+            <div class="create-post__filters-wrapper">
+              <div class="create-post__filters">
 
-              <button class="create-post__edit create-post__edit--crop create-post__edit--active" type="button">
-                <svg class="create-post__filter create-post__filter--crop" x="0px" y="0px" width="48px" height="48px">
-                  <use xlink:href="#icon-editor-crop"></use>
-                </svg>
-              </button>
+                <button class="create-post__edit create-post__edit--crop create-post__edit--active" type="button">
+                  <svg class="create-post__filter create-post__filter--crop" x="0px" y="0px" width="48px" height="48px">
+                    <use xlink:href="#icon-editor-crop"></use>
+                  </svg>
+                </button>
 
-              <button class="create-post__edit create-post__edit--fill" type="button">
-                <svg class="create-post__filter  create-post__filter--fill" x="0px" y="0px" width="48px" height="48px">
-                  <use xlink:href="#icon-editor-fill"></use>
-                </svg>
-              </button>
+                <button class="create-post__edit create-post__edit--fill" type="button">
+                  <svg class="create-post__filter  create-post__filter--fill" x="0px" y="0px" width="48px"
+                    height="48px">
+                    <use xlink:href="#icon-editor-fill"></use>
+                  </svg>
+                </button>
 
-              <button class="create-post__edit create-post__edit--contrast" type="button">
-                <svg class="create-post__filter create-post__filter--contrast" x="0px" y="0px" width="31.92px"
-                  height="31.92px">
-                  <use xlink:href="#icon-editor-contrast"></use>
-                </svg>
-              </button>
+                <button class="create-post__edit create-post__edit--contrast" type="button">
+                  <svg class="create-post__filter create-post__filter--contrast" x="0px" y="0px" width="31.92px"
+                    height="31.92px">
+                    <use xlink:href="#icon-editor-contrast"></use>
+                  </svg>
+                </button>
 
+              </div>
+
+              <div class="create-post__range-sliders range-slider">
+                <div
+                  class="create-post__range-slider create-post__range-slider--active create-post__range-slider--crop range-slider__container">
+                  <div class="range-slider__track ">
+                    <div class="range-slider__progress"></div>
+                  </div>
+                  <div class="range-slider__thumb"></div>
+                </div>
+
+                <div class="create-post__range-slider create-post__range-slider--fill range-slider__container">
+                  <div class=" range-slider__track ">
+                    <div class="range-slider__progress"></div>
+                  </div>
+                  <div class="range-slider__thumb"></div>
+                </div>
+
+                <div class="create-post__range-slider create-post__range-slider--contrast range-slider__container">
+                  <div class=" range-slider__track ">
+                    <div class="range-slider__progress"></div>
+                  </div>
+                  <div class="range-slider__thumb"></div>
+                </div>
+
+              </div>
             </div>
 
-            <div class="create-post__range-sliders range-slider">
-
-              <div
-                class="create-post__range-slider create-post__range-slider--active create-post__range-slider--crop range-slider__container">
-                <div class="range-slider__track ">
-                  <div class="range-slider__progress"></div>
-                </div>
-                <div class="range-slider__thumb"></div>
-              </div>
-
-              <div class="create-post__range-slider create-post__range-slider--fill range-slider__container">
-                <div class=" range-slider__track ">
-                  <div class="range-slider__progress"></div>
-                </div>
-                <div class="range-slider__thumb"></div>
-              </div>
-
-              <div class="create-post__range-slider create-post__range-slider--contrast range-slider__container">
-                <div class=" range-slider__track ">
-                  <div class="range-slider__progress"></div>
-                </div>
-                <div class="range-slider__thumb"></div>
-              </div>
-
-
+            <div class="create-post__buttons">
+              <button class="create-post__button button__oval button button__oval--upload" type="submit">
+                Запостить
+              </button>
+              <button class="create-post__button button__oval button button__oval--cancel" type="reset">
+                Отмена
+              </button>
             </div>
-          </div>
-
-          <div class="create-post__buttons">
-            <button class="create-post__button button__oval button button__oval--upload" type="submit">
-              Запостить
-            </button>
-            <button class="create-post__button button__oval button button__oval--cancel" type="reset">
-              Отмена
-            </button>
           </div>
 
         </div>

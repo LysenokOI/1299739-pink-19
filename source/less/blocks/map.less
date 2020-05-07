@@ -2,14 +2,13 @@
   position: relative;
   margin: 0 auto;
   width: 320px;
+  height: 200px;
+  overflow: hidden;
 }
 
 .map {
-  height: 200px;
   width: 320px;
   margin: 0 auto;
-  overflow: hidden;
-  position: relative;
 }
 
 .map__bg-triangle-white-footer {
@@ -40,16 +39,22 @@
 
 @media (min-width: @tablet-width) {
   .map-wrapper {
+    height: 366px;
     width: 660px;
   }
 
   .map {
-    height: 366px;
+    width: 100%;
   }
 
   .map__bg-triangle-white-footer {
-    width: 660px;
+    width: 100%;
     margin: 0 auto;
+  }
+
+  .map__image {
+    bottom: -125px;
+    left: -20px;
   }
 
   .map__marker {
@@ -59,15 +64,12 @@
 
 @media (min-width: @desktop-width) {
   .map-wrapper {
+    height: 498px;
     width: 1200px;
   }
 
   .map__bg-triangle-white-footer {
     width: 1200px;
-  }
-
-  .map {
-    height: 498px;
   }
 
   .map__marker {

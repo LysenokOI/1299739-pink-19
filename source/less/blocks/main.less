@@ -25,6 +25,15 @@
 .main__title__wrapper {
   position: relative;
   z-index: 100;
+
+  margin-top: 30px;
+  &--index {
+    height: auto;
+    min-height: 60px;
+  }
+  &--photo {
+    width: 360px;
+  }
 }
 
 .main__background__hand {
@@ -38,14 +47,6 @@
 }
 
 /*Block model*/
-
-.main__title__wrapper {
-  margin-top: 30px;
-  &--index {
-    height: auto;
-    min-height: 60px;
-  }
-}
 
 .main__title {
   text-align: center;
@@ -70,6 +71,7 @@
 
   .main__background {
     height: 440px;
+    width: 100%;
     &--index {
       overflow: unset;
     }
@@ -90,11 +92,12 @@
 
   .main__background__hand {
     position: absolute;
-    z-index: 0;
+    z-index: 100;
     left: 0;
     right: 62px;
     bottom: 0;
-    width: 258px;
+    width: 700px;
+    height: auto;
     margin: auto;
   }
 

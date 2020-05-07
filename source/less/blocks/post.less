@@ -124,7 +124,7 @@
 
   .post__likes {
     display: flex;
-    justify-content: space-between;  //align to bottom
+    justify-content: space-between;
     &::before {
       display: none;
     }
@@ -136,6 +136,20 @@
       position: absolute;
       top: 0;
       right: 29px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post {
+    &--day {
+      width: 940px;
+    }
+  }
+  .post__image {
+    &--day {
+      width: 1200px;
+      margin-left: -130px;
     }
   }
 }

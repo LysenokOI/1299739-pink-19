@@ -118,7 +118,11 @@
     <section class="main__wrapper main__wrapper--index">
 
       <div class="main__background main__background--index">
-        <img src="../img/bg-back-mobile@1x.jpg">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/bg-back-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="/img/bg-back-tablet@1x.jpg">
+          <img src="/img/bg-back-mobile@1x.jpg">
+        </picture>
       </div>
 
       <article class="main__title__wrapper main__title__wrapper--index">
@@ -130,7 +134,11 @@
       </article>
 
       <div class="main__background__hand">
-        <img src="../img/iphone-hand-mobile@1x.png" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/iphone-hand-desktop@1x.png">
+          <source media="(min-width: 660px)" srcset="/img/iphone-hand-tablet@1x.png">
+          <img src="/img/iphone-hand-mobile@1x.png" alt="">
+        </picture>
       </div>
 
       <article class="main__os os">
@@ -230,9 +238,25 @@
             </li>
           </ul>
           <ul class="goals__images">
-            <li class="goals__image"><img src="../img/iphone-screen-1-desktop@1x.png" alt="grey trash can"></li>
-            <li class="goals__image"><img src="../img/iphone-screen-2-desktop@1x.png" alt="pink trash can"></li>
-            <li class="goals__image"><img src="../img/iphone-screen-mobile@1x.png" height="320px" alt="Всем привет">
+            <li class="goals__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/iphone-screen-1-desktop@1x.png">
+                <img src="#" alt="gray trash can">
+              </picture>
+            </li>
+            <li class="goals__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/iphone-screen-2-desktop@1x.png">
+                <img src="#" alt="pink trash can">
+              </picture>
+            </li>
+
+            <li class="goals__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="/img/iphone-screen-3-desktop@1x.png">
+                <source media="(min-width: 660px)" srcset="/img/iphone-screen-3-tablet@1x.png">
+                <img src="/img/iphone-screen-mobile@1x.png" alt="Всем привет">
+              </picture>
             </li>
           </ul>
         </div>
@@ -446,7 +470,11 @@
       </svg>
 
       <div class="map">
-        <img class="map__image" src="../img/bg-map-mobile@1x.png" width="320px" alt="карта">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/bg-map-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="/img/bg-map-tablet@1x.jpg">
+          <img class="map__image" src="/img/bg-map-mobile@1x.png" alt="карта">
+        </picture>
 
         <svg class="map__marker">
           <use xlink:href="#icon-map-marker" x="0px" y="0px" width="35.983px" height="35.983px"></use>
