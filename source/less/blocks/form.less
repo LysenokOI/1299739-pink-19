@@ -1,7 +1,7 @@
 /*Block model*/
 
 .form__section {
-  padding-top: 41px;
+  padding-top: 38px;
 }
 
 .form__achievements {
@@ -19,13 +19,32 @@
 
 .form__input-text {
   display: block;
+  margin-top: 5px;
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  width: 100%;
+  height: 62px;
+
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid @disabled;
+
+  &::placeholder {
+    color: @dark;
+  }
+  &:hover {
+    border-color: @dark;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    border-color: @pink;
+  }
 }
 
 .form__label {
   &--left {
-    padding-left: 21px;
+    padding-left: 23px;
   }
   &--center {
     display: block;
@@ -34,11 +53,68 @@
   }
 }
 
+/*Checkboxes*/
+
 .form__box-label {
   display: block;
   margin-top: 42px;
   margin-bottom: 5px;
+  padding-left: 50px;
 }
+
+.form__checkbox,
+.form__radio {
+  position: absolute;
+  appearance: none;
+}
+
+.form__checkbox-new,
+.form__radio-new {
+  position: absolute;
+  margin-left: -50px;
+  background-color: @light;
+}
+
+.form__checkbox-new {
+  width: 35px;
+  height: 35px;
+  border: 2px solid @disabled;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__radio-new {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 2px solid @disabled;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__checkbox:checked + .form__checkbox-new,
+.form__radio:checked + .form__radio-new {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%0A%23d22856' x='0px' y='0px' width='21.698px' height='16.09px' viewBox='-82.357 4.875 21.698 16.09' enable-background='new -82.357 4.875 21.698 16.09' xml:space='preserve'%3E%3Cpath d='M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z'/%3E%3C/svg%3E");
+}
+
+.form__checkbox:hover + .form__checkbox-new,
+.form__radio:hover + .form__radio-new {
+  border-color: @dark;
+}
+
+.form__checkbox:focus + .form__checkbox-new,
+.form__radio:focus + .form__radio-new {
+  box-shadow: 1px 1px 4px 0px @pink;
+}
+
+.form__checkbox:active + .form__checkbox-new,
+.form__radio:active + .form__radio-new {
+  border-color: @pink;
+}
+
+
+
+/*Checkboxes End*/
 
 .form__textarea {
   margin-top: 19px;
@@ -72,17 +148,7 @@
   }
 }
 
-.form__input-text {
-  width: 100%;
-  height: 59px;
-  font-size: 18px;
-  line-height: 30px;
-  border: 2px solid @disabled;
 
-  &::placeholder {
-    color: @dark;
-  }
-}
 
 .form__box-label {
   font-size: 18px;

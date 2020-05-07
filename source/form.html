@@ -97,13 +97,17 @@
     <section class="main__wrapper ">
 
       <div class="main__background">
-        <img src="../img/bg-back-mobile@1x.jpg">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="/img/bg-back-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="/img/bg-back-tablet@1x.jpg">
+          <img src="/img/bg-back-mobile@1x.jpg">
+        </picture>
       </div>
 
       <article class="main__title__wrapper">
         <div class="container">
           <h1 class="main__title ">
-            Взгляните на жизнь иначе!
+            Конкурс на самое безбашенное путешествие с Пинк
           </h1>
         </div>
 
@@ -112,7 +116,7 @@
 
 
     <div class="container">
-      <div class="section__description__wrapper">
+      <div class="section__description-wrapper section__description-wrapper--form">
         <p class="section__description">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
@@ -120,24 +124,24 @@
     </div>
 
     <form class="form" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset class="form__person">
+      <fieldset class="form__person person">
 
         <div class="container">
-          <label class="form__label form__label--left">
+          <label class="person__label form__label form__label--left">
             Фамилия:
-            <input class="form__input-text" type="text" name="person-family" id="person-family"
+            <input class="person__input form__input-text" type="text" name="person-family" id="person-family"
               placeholder="Укажите фамилию *" required>
           </label>
 
-          <label class="form__label form__label--left">
+          <label class="person__label form__label form__label--left">
             Имя:
-            <input class="form__input-text" type="text" name="person-name" id="person-name"
+            <input class="person__input form__input-text" type="text" name="person-name" id="person-name"
               placeholder="Введите ваше имя *" required>
           </label>
 
-          <label class="form__label form__label--left">
+          <label class="person__label form__label form__label--left">
             Отчество:
-            <input class="form__input-text" type="text" name="middle-name" id="middle-name"
+            <input class="person__input form__input-text" type="text" name="middle-name" id="middle-name"
               placeholder="Ну и отчество тоже">
           </label>
         </div>
@@ -151,37 +155,37 @@
 
           <label class="form__box-label">
             <input class="form__checkbox" type="checkbox" name="check-shark" id="check-shark" />
-            <span class="from__new-checkbox"></span>
+            <span class="form__checkbox-new"></span>
             Сделал селфи с акулой
           </label>
 
           <label class="form__box-label">
             <input class="form__checkbox" type="checkbox" name="check-burned" id="check-burned" />
-            <span class="form__new-checkbox"></span>
+            <span class="form__checkbox-new"></span>
             Обгорел на пляже
           </label>
 
           <label class="form__box-label">
             <input class="form__checkbox" type="checkbox" name="check-norris" id="check-norris" />
-            <span class="form_new-checkbox"></span>
+            <span class="form__checkbox-new"></span>
             Видел Чака Норриса
           </label>
 
           <label class="form__box-label">
             <input class="form__checkbox" type="checkbox" name="check-souvenirs" id="check-souvenirs" />
-            <span class="form__new-checkbox"></span>
+            <span class="form__checkbox-new"></span>
             Накупил сувениров
           </label>
 
           <label class="form__box-label">
             <input class="form__checkbox" type="checkbox" name="check-tower" id="check-tower" />
-            <span class="form__new-checkbox"></span>
+            <span class="form__checkbox-new"></span>
             Удержал башню
           </label>
 
           <label class="form__box-label">
             <input class="form__checkbox" type="checkbox" name="check-hotel" id="check-hotel" />
-            <span class="form__new-checkbox"></span>
+            <span class="form__checkbox-new"></span>
             Разгромил отель
           </label>
         </div>
