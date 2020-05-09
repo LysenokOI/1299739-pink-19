@@ -5,16 +5,20 @@
 }
 
 .form__achievements {
-  padding-bottom: 39px;
+  padding-bottom: 48px;
+}
+
+.form__contacts {
+  padding-top: 32px;
+  padding-bottom: 13px;
 }
 
 .form__app-used {
-  padding-bottom: 39px;
+  padding-bottom: 48px;
 }
 
 .form__emotions {
   min-height: 323px;
-  padding-bottom: 52px;
 }
 
 .form__input-text {
@@ -42,6 +46,12 @@
   }
 }
 
+.form__contacts-label {
+  &:last-of-type .form__contacts-input {
+    margin-bottom: 0px;
+  }
+}
+
 .form__label {
   &--left {
     padding-left: 23px;
@@ -53,13 +63,26 @@
   }
 }
 
+.form__checkbox-label {
+  margin-bottom: 42px;
+}
+
+.form__radio-label {
+  margin-bottom: 38px;
+}
+
 /*Checkboxes*/
 
 .form__box-label {
   display: block;
-  margin-top: 42px;
-  margin-bottom: 5px;
-  padding-left: 50px;
+  margin-bottom: 52px;
+  padding-left: 69px;
+  &--radio {
+    margin-bottom: 45px;
+  }
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
 }
 
 .form__checkbox,
@@ -71,30 +94,41 @@
 .form__checkbox-new,
 .form__radio-new {
   position: absolute;
-  margin-left: -50px;
+  margin-top: -3px;
+  margin-left: -69px;
   background-color: @light;
 }
 
 .form__checkbox-new {
-  width: 35px;
-  height: 35px;
+  width: 39px;
+  height: 39px;
   border: 2px solid @disabled;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .form__radio-new {
-  width: 37px;
-  height: 37px;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
   border: 2px solid @disabled;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.form__checkbox:checked + .form__checkbox-new,
-.form__radio:checked + .form__radio-new {
+.form__checkbox:checked + .form__checkbox-new {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%0A%23d22856' x='0px' y='0px' width='21.698px' height='16.09px' viewBox='-82.357 4.875 21.698 16.09' enable-background='new -82.357 4.875 21.698 16.09' xml:space='preserve'%3E%3Cpath d='M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z'/%3E%3C/svg%3E");
+}
+
+.form__radio:checked + .form__radio-new::before {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: @pink;
+  border-radius: 50%;
 }
 
 .form__checkbox:hover + .form__checkbox-new,
@@ -112,19 +146,26 @@
   border-color: @pink;
 }
 
-
-
 /*Checkboxes End*/
 
 .form__textarea {
-  margin-top: 19px;
-  padding-top: 23px;
-  min-height: 197px;
+  margin-top: 16px;
+  padding-top: 14px;
+  min-height: 201px;
+
+  resize: none;
 }
 
 .form__required {
-  margin-top: 46px;
+  margin-top: 39px;
+  padding-bottom: 17px;
   text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    content: "*";
+    color: @pink;
+  }
 }
 
 /*Decorations*/
@@ -148,20 +189,8 @@
   }
 }
 
-
-
 .form__box-label {
   font-size: 18px;
   line-height: 30px;
 }
 
-.form__textarea {
-  resize: none;
-}
-
-.form__required {
-  &::before {
-    content: "*";
-    color: @pink;
-  }
-}

@@ -85,16 +85,11 @@
         </ul>
 
       </nav>
-
     </div>
-
-
-
   </header>
 
   <main class="main">
-
-    <section class="main__wrapper ">
+    <section class="main-wrapper ">
 
       <div class="main__background">
         <picture>
@@ -104,13 +99,12 @@
         </picture>
       </div>
 
-      <article class="main__title__wrapper">
+      <article class="main__title-wrapper">
         <div class="container">
           <h1 class="main__title ">
             Конкурс на самое безбашенное путешествие с Пинк
           </h1>
         </div>
-
       </article>
     </section>
 
@@ -151,7 +145,8 @@
       <fieldset class="form__achievements form__section">
 
         <div class="container">
-          <legend class="form__label form__label--center">Ваши безбашенные<br> достижения в путешествии</legend>
+          <legend class="form__label form__checkbox-label form__label--center">Ваши безбашенные<br> достижения в
+            путешествии</legend>
 
           <label class="form__box-label">
             <input class="form__checkbox" type="checkbox" name="check-shark" id="check-shark" />
@@ -196,13 +191,13 @@
         <div class="container">
           <label class="form__label form__label--left">
             Номер телефона
-            <input class="form__input-text" type="tel" name="person-phone" id="person-phone"
-              placeholder="Номер пожалуйста">
+            <input class="form__input-text form__contacts-label form__contacts-input" type="tel" name="person-phone"
+              id="person-phone" placeholder="Номер, пожалуйста">
           </label>
 
-          <label class="form__label form__label--left">
+          <label class="form__label form__contacts-label form__label--left">
             Адрес почты
-            <input class="form__input-text" type="email" name="person-email" id="person-email"
+            <input class="form__input-text form__contacts-input" type="email" name="person-email" id="person-email"
               placeholder="Введите почту *" required>
           </label>
         </div>
@@ -212,21 +207,21 @@
       <fieldset class="form__app-used form__section">
 
         <div class="container">
-          <legend class="form__label form__label--center">С каким приложением путешествовали?</legend>
+          <legend class="form__label form__radio-label form__label--center">С каким приложением путешествовали?</legend>
 
-          <label class="form__box-label">
+          <label class="form__box-label form__box-label--radio">
             <input class="form__radio" type="radio" name="app-used" value="ios-app" id="input-ios" />
             <span class="form__radio-new"></span>
             Pink для iOS
           </label>
 
-          <label class="form__box-label">
+          <label class="form__box-label form__box-label--radio">
             <input class="form__radio" type="radio" name="app-used" value="android-app" id="input-android" />
             <span class="form__radio-new"></span>
-            PINK на Android
+            Pink на Android
           </label>
 
-          <label class="form__box-label">
+          <label class="form__box-label form__box-label--radio">
             <input class="form__radio" type="radio" name="app-used" value="windows-app" id="input-winphone" />
             <span class="form__radio-new"></span>
             Windows Phone
