@@ -111,43 +111,41 @@
 
     <div class="container">
       <div class="section__description-wrapper section__description-wrapper--form">
-        <p class="section__description">
+        <p class="section__description section__description--form">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         </p>
       </div>
     </div>
 
     <form class="form" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset class="form__person person">
-
-        <div class="container">
-          <label class="person__label form__label form__label--left">
+      <fieldset class="form__person">
+        <div class="form__person-wrapper">
+          <label class="form__label form__label--person">
             Фамилия:
-            <input class="person__input form__input-text" type="text" name="person-family" id="person-family"
+            <input class="form__input-text form__input-text--person" type="text" name="person-family" id="person-family"
               placeholder="Укажите фамилию *" required>
           </label>
 
-          <label class="person__label form__label form__label--left">
+          <label class="form__label form__label--person">
             Имя:
-            <input class="person__input form__input-text" type="text" name="person-name" id="person-name"
+            <input class="form__input-text form__input-text--person" type="text" name="person-name" id="person-name"
               placeholder="Введите ваше имя *" required>
           </label>
 
-          <label class="person__label form__label form__label--left">
+          <label class="form__label form__label--person">
             Отчество:
-            <input class="person__input form__input-text" type="text" name="middle-name" id="middle-name"
+            <input class="form__input-text form__input-text--person" type="text" name="middle-name" id="middle-name"
               placeholder="Ну и отчество тоже">
           </label>
         </div>
 
+
       </fieldset>
 
       <fieldset class="form__achievements form__section">
-
-        <div class="container">
-          <legend class="form__label form__checkbox-label form__label--center">Ваши безбашенные<br> достижения в
-            путешествии</legend>
-
+        <legend class="form__label form__legend form__legend--achievements">Ваши безбашенные достижения в
+          путешествии</legend>
+        <div class="form__achievements-wrapper">
           <label class="form__box-label">
             <input class="form__checkbox" type="checkbox" name="check-shark" id="check-shark" />
             <span class="form__checkbox-new"></span>
@@ -187,61 +185,63 @@
 
       </fieldset>
 
-      <fieldset class="form__contacts form__section">
-        <div class="container">
-          <label class="form__label form__label--left">
-            Номер телефона
-            <input class="form__input-text form__contacts-label form__contacts-input" type="tel" name="person-phone"
-              id="person-phone" placeholder="Номер, пожалуйста">
-          </label>
+      <fieldset class="form__contacts form__section container">
+        <legend class="form__label form__legend--contacts">Контактная информация</legend>
 
-          <label class="form__label form__contacts-label form__label--left">
-            Адрес почты
-            <input class="form__input-text form__contacts-input" type="email" name="person-email" id="person-email"
-              placeholder="Введите почту *" required>
-          </label>
+        <div class="form__contacts-wrapper">
+          <div class="form__contact form__contact--tel">
+            <label class="form__label form__label--contacts">
+              Номер телефона
+            </label>
+            <input class="form__input-text form__input-text--contacts" type="tel" name="person-phone" id="person-phone"
+              placeholder="Номер, пожалуйста">
+          </div>
+
+          <div class="form__contact form__contact--mail">
+            <label class="form__label form__label--contacts">
+              Адрес почты
+            </label>
+            <input class="form__input-text form__input-text--contacts" type="email" name="person-email"
+              id="person-email" placeholder="Введите почту *" required>
+          </div>
         </div>
 
       </fieldset>
 
       <fieldset class="form__app-used form__section">
+        <legend class="form__label form__legend form__legend--app-used">С каким приложением
+          путешествовали?</legend>
 
-        <div class="container">
-          <legend class="form__label form__radio-label form__label--center">С каким приложением путешествовали?</legend>
+        <label class="form__box-label form__box-label--radio">
+          <input class="form__radio" type="radio" name="app-used" value="ios-app" id="input-ios" />
+          <span class="form__radio-new"></span>
+          Pink для iOS
+        </label>
 
-          <label class="form__box-label form__box-label--radio">
-            <input class="form__radio" type="radio" name="app-used" value="ios-app" id="input-ios" />
-            <span class="form__radio-new"></span>
-            Pink для iOS
-          </label>
+        <label class="form__box-label form__box-label--radio">
+          <input class="form__radio" type="radio" name="app-used" value="android-app" id="input-android" />
+          <span class="form__radio-new"></span>
+          Pink на Android
+        </label>
 
-          <label class="form__box-label form__box-label--radio">
-            <input class="form__radio" type="radio" name="app-used" value="android-app" id="input-android" />
-            <span class="form__radio-new"></span>
-            Pink на Android
-          </label>
-
-          <label class="form__box-label form__box-label--radio">
-            <input class="form__radio" type="radio" name="app-used" value="windows-app" id="input-winphone" />
-            <span class="form__radio-new"></span>
-            Windows Phone
-          </label>
-        </div>
-
+        <label class="form__box-label form__box-label--radio">
+          <input class="form__radio" type="radio" name="app-used" value="windows-app" id="input-winphone" />
+          <span class="form__radio-new"></span>
+          Windows Phone
+        </label>
       </fieldset>
 
 
-      <div class="form__emotions form__section">
-        <div class="container">
-          <label class="form__label form__label--center">
-            Опишите свои эмоции
-            <textarea class="form__input-text form__textarea" name="text" id="text-emotions"
-              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </label>
-        </div>
-      </div>
+      <fieldset class="form__emotions form__section container">
+        <legend class="form__label form__legend form__legend--emotions">
+          Опишите свои эмоции
+        </legend>
+        <textarea class="form__input-text form__textarea" name="text" id="text-emotions"
+          placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 
-      <div class="container">
+      </fieldset>
+
+      <div class="form__confirm container">
         <button class="form__button button button__rect" type="submit">
           Отправить форму
         </button>
