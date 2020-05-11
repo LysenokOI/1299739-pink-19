@@ -7,6 +7,15 @@
   min-height: 66px;
 }
 
+.nav__logo {
+  &--tablet {
+    display: none;
+  }
+  &--desktop {
+    display: none;
+  }
+}
+
 .nav__toggle__wrapper {
   margin-left: auto;
   padding-top: 21px;
@@ -30,6 +39,15 @@
     min-height: 109px;
   }
 
+  .nav__logo {
+    &--mobile {
+      display: none;
+    }
+    &--tablet {
+      display: block;
+    }
+  }
+
   .nav__toggle__wrapper {
     padding-top: 44px;
   }
@@ -38,6 +56,15 @@
 @media (min-width: @desktop-width) {
   .nav__logo__wrapper {
     margin-left: 0px;
+  }
+
+  .nav__logo {
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: block;
+    }
   }
 
   .nav__toggle__wrapper {

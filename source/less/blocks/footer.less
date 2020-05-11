@@ -40,8 +40,11 @@
     }
   }
 }
-.footer__logo-text {
-  fill: @pink;
+
+.footer__logo {
+  &--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -71,6 +74,17 @@
       padding-top: 70px;
     }
   }
+
+  .footer__logo {
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
   .footer__copyright {
     margin-left: 0px;
   }
