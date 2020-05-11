@@ -19,15 +19,9 @@
       <path
         d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z" />
     </symbol>
-    <symbol id="bg-triangle-white">
-      <polygon points="1200,0 0,0 0,94.074 " />
-    </symbol>
     <symbol id="icon-timer" viewBox="0 0 298 345.097">
       <path
         d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z" />
-    </symbol>
-    <symbol id="bg-triangle-white-footer">
-      <polygon points="297.64,61.905 0,0 595.28,0 " />
     </symbol>
     <symbol id="icon-map-marker" viewBox="0 0 35.983 35.983">
       <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991" />
@@ -119,9 +113,9 @@
 
       <div class="main__background main__background--index">
         <picture>
-          <source media="(min-width: 1200px)" srcset="/img/bg-back-desktop@1x.jpg">
-          <source media="(min-width: 660px)" srcset="/img/bg-back-tablet@1x.jpg">
-          <img src="/img/bg-back-mobile@1x.jpg">
+          <source media="(min-width: 1200px)" srcset="/img/bg-back-desktop@1x.jpg, /img/bg-back-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="/img/bg-back-tablet@1x.jpg, /img/bg-back-tablet@2x.jpg 2x">
+          <img src="/img/bg-back-mobile@1x.jpg" srcset="/img/bg-back-mobile@2x.jpg 2x">
         </picture>
       </div>
 
@@ -135,9 +129,10 @@
 
       <div class="main__background-hand">
         <picture>
-          <source media="(min-width: 1200px)" srcset="/img/iphone-hand-desktop@1x.png">
-          <source media="(min-width: 660px)" srcset="/img/iphone-hand-tablet@1x.png">
-          <img src="/img/iphone-hand-mobile@1x.png" alt="">
+          <source media="(min-width: 1200px)"
+            srcset="/img/iphone-hand-desktop@1x.png, /img/iphone-hand-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="/img/iphone-hand-tablet@1x.png, /img/iphone-hand-tablet@2x.png 2x">
+          <img src="/img/iphone-hand-mobile@1x.png" srcset="/img/iphone-hand-mobile@2x.png 2x" alt="hand">
         </picture>
       </div>
 
@@ -207,9 +202,6 @@
       </ul>
 
       <div class="goals__background">
-        <svg class="goals__bg-triangle-white bg-triangle-white" x="0px" y="0px">
-          <use xlink:href="#bg-triangle-white"></use>
-        </svg>
         <div class="goals__container container">
           <ul class="goals__list list">
             <li class="goals__item list__item">
@@ -240,22 +232,27 @@
           <ul class="goals__images">
             <li class="goals__image">
               <picture>
-                <source media="(min-width: 1200px)" srcset="/img/iphone-screen-1-desktop@1x.png">
+                <source media="(min-width: 1200px)"
+                  srcset="/img/iphone-screen-1-desktop@1x.png, /img/iphone-screen-1-desktop@2x.png 2x">
                 <img src="#" alt="gray trash can">
               </picture>
             </li>
             <li class="goals__image">
               <picture>
-                <source media="(min-width: 1200px)" srcset="/img/iphone-screen-2-desktop@1x.png">
+                <source media="(min-width: 1200px)"
+                  srcset="/img/iphone-screen-2-desktop@1x.png, /img/iphone-screen-2-desktop@2x.png 2x">
                 <img src="#" alt="pink trash can">
               </picture>
             </li>
 
             <li class="goals__image">
               <picture>
-                <source media="(min-width: 1200px)" srcset="/img/iphone-screen-3-desktop@1x.png">
-                <source media="(min-width: 660px)" srcset="/img/iphone-screen-3-tablet@1x.png">
-                <img src="/img/iphone-screen-mobile@1x.png" alt="Всем привет">
+                <source media="(min-width: 1200px)"
+                  srcset="/img/iphone-screen-3-desktop@1x.png, /img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 660px)"
+                  srcset="/img/iphone-screen-3-tablet@1x.png, /img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="/img/iphone-screen-mobile@1x.png" srcset="/img/iphone-screen-mobile@2x.png 2x"
+                  alt="Всем привет">
               </picture>
             </li>
           </ul>
@@ -335,9 +332,6 @@
     </div>
 
     <section class="tariffs slider">
-      <svg class="tariffs__bg-triangle-white bg-triangle-white" x="0px" y="0px" height="94.074px">
-        <use xlink:href="#bg-triangle-white"></use>
-      </svg>
 
       <input type="radio" id="tariffs__btn-1" class="slider__radio-btn" name="tariffs__toggle">
       <input type="radio" id="tariffs__btn-2" class="slider__radio-btn" name="tariffs__toggle">
@@ -369,7 +363,7 @@
               </div>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="25.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
@@ -398,7 +392,7 @@
               </svg>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
@@ -417,17 +411,17 @@
               </div>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
             <div class="tariffs__value tariffs__col">
-              <svg class="tariffs__icon-yes" x="0px" y="0px" width="21.698px" height="16.09px">
+              <svg class="tariffs__icon-yes" x="0px" y="0px" width="27.698px" height="21.09px">
                 <use xlink:href="#icon-yes"></use>
               </svg>
             </div>
@@ -465,15 +459,12 @@
     </div>
 
     <div class="map-wrapper">
-      <svg class="map__bg-triangle-white-footer">
-        <use xlink:href="#bg-triangle-white-footer"></use>
-      </svg>
 
       <div class="map">
         <picture>
-          <source media="(min-width: 1200px)" srcset="/img/bg-map-desktop@1x.jpg">
-          <source media="(min-width: 660px)" srcset="/img/bg-map-tablet@1x.jpg">
-          <img class="map__image" src="/img/bg-map-mobile@1x.png" alt="карта">
+          <source media="(min-width: 1200px)" srcset="/img/bg-map-desktop@1x.jpg, /img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="/img/bg-map-tablet@1x.jpg, /img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" src="/img/bg-map-mobile@1x.png" srcset="/img/bg-map-mobile@2x.png 2x" alt="карта">
         </picture>
 
         <svg class="map__marker">
