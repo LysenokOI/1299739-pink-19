@@ -146,37 +146,37 @@
         <legend class="form__label form__legend form__legend--achievements">Ваши безбашенные достижения в
           путешествии</legend>
         <div class="form__achievements-wrapper">
-          <label class="form__box-label">
+          <label class="form__box-label form__box-label--checkbox">
             <input class="form__checkbox" type="checkbox" name="check-shark" id="check-shark" />
             <span class="form__checkbox-new"></span>
             Сделал селфи с акулой
           </label>
 
-          <label class="form__box-label">
+          <label class="form__box-label form__box-label--checkbox">
             <input class="form__checkbox" type="checkbox" name="check-burned" id="check-burned" />
             <span class="form__checkbox-new"></span>
             Обгорел на пляже
           </label>
 
-          <label class="form__box-label">
+          <label class="form__box-label form__box-label--checkbox">
             <input class="form__checkbox" type="checkbox" name="check-norris" id="check-norris" />
             <span class="form__checkbox-new"></span>
             Видел Чака Норриса
           </label>
 
-          <label class="form__box-label">
+          <label class="form__box-label form__box-label--checkbox">
             <input class="form__checkbox" type="checkbox" name="check-souvenirs" id="check-souvenirs" />
             <span class="form__checkbox-new"></span>
             Накупил сувениров
           </label>
 
-          <label class="form__box-label">
+          <label class="form__box-label form__box-label--checkbox">
             <input class="form__checkbox" type="checkbox" name="check-tower" id="check-tower" />
             <span class="form__checkbox-new"></span>
             Удержал башню
           </label>
 
-          <label class="form__box-label">
+          <label class="form__box-label form__box-label--checkbox">
             <input class="form__checkbox" type="checkbox" name="check-hotel" id="check-hotel" />
             <span class="form__checkbox-new"></span>
             Разгромил отель
@@ -208,28 +208,30 @@
 
       </fieldset>
 
-      <fieldset class="form__app-used form__section">
-        <legend class="form__label form__legend form__legend--app-used">С каким приложением
-          путешествовали?</legend>
+      <div class="form__app-used-wrapper ">
+        <fieldset class="form__app-used form__section">
+          <legend class="form__label form__legend form__legend--app-used">С каким приложением
+            путешествовали?</legend>
 
-        <label class="form__box-label form__box-label--radio">
-          <input class="form__radio" type="radio" name="app-used" value="ios-app" id="input-ios" />
-          <span class="form__radio-new"></span>
-          Pink для iOS
-        </label>
+          <label class="form__box-label form__box-label--radio">
+            <input class="form__radio" type="radio" name="app-used" value="ios-app" id="input-ios" />
+            <span class="form__radio-new"></span>
+            Pink для iOS
+          </label>
 
-        <label class="form__box-label form__box-label--radio">
-          <input class="form__radio" type="radio" name="app-used" value="android-app" id="input-android" />
-          <span class="form__radio-new"></span>
-          Pink на Android
-        </label>
+          <label class="form__box-label form__box-label--radio">
+            <input class="form__radio" type="radio" name="app-used" value="android-app" id="input-android" />
+            <span class="form__radio-new"></span>
+            Pink на Android
+          </label>
 
-        <label class="form__box-label form__box-label--radio">
-          <input class="form__radio" type="radio" name="app-used" value="windows-app" id="input-winphone" />
-          <span class="form__radio-new"></span>
-          Windows Phone
-        </label>
-      </fieldset>
+          <label class="form__box-label form__box-label--radio">
+            <input class="form__radio" type="radio" name="app-used" value="windows-app" id="input-winphone" />
+            <span class="form__radio-new"></span>
+            Windows Phone
+          </label>
+        </fieldset>
+      </div>
 
 
       <fieldset class="form__emotions form__section container">
@@ -247,7 +249,7 @@
         </button>
 
         <div class="form__required">
-          &mdash; Обязательные поля
+          &mdash; Обязательные <span class="form__required--desktop"></span> поля
         </div>
       </div>
 

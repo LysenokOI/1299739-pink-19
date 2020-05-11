@@ -9,15 +9,21 @@
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
 }
 
 .form__achievements {
+  padding-top: 116px;
+  padding-bottom: 47px;
+
+}
+
+.form__achievements-wrapper {
   width: 320px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 116px;
-  padding-bottom: 47px;
+
 }
 
 .form__contacts {
@@ -25,14 +31,17 @@
   padding-bottom: 25px;
 }
 
+.form__app-used-wrapper {
+  background-color: @grey;
+}
+
 .form__app-used {
   width: 320px;
+  margin: 0 auto;
   padding-top: 113px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 48px;
-
-  background-color: @grey;
 }
 
 .form__emotions {
@@ -91,8 +100,10 @@
   &--achievements {
     position: absolute;
     top: 37px;
-    left: 56px;
+    left: 0;
+    right: 0;
     width: 218px;
+    margin: 0 auto;
     margin-bottom: 42px;
     line-height: 18px;
     text-align: center;
@@ -238,14 +249,16 @@
     border: none;
   }
 
-  .form__app-used {
+  .form__app-used-wrapper {
     order: 2;
+    background-color: @light;
+  }
+
+  .form__app-used {
     margin: 0 auto;
     padding-top: 48px;
     padding-left: 61px;
     padding-bottom: 59px;
-
-    background-color: @light;
   }
 
   .form__contacts {
@@ -259,13 +272,16 @@
   .form__achievements {
     order: 4;
     margin: 58px auto 0px;
-    margin-left: 20px;
-    margin-right: 20px;
     padding-top: 48px;
     padding-left: 60px;
     padding-bottom: 53px;
 
     background-color: @light;
+  }
+
+  .form__achievements-wrapper {
+    width: 100%;
+    padding: 0;
   }
 
   .form__emotions {
@@ -410,6 +426,7 @@
     width: 435px;
     padding: 0;
     padding-top: 14px;
+    margin-left: 0;
   }
 
   .form__person-wrapper {
@@ -423,7 +440,9 @@
   .form__app-used {
     width: 434px;
     margin: 0;
-    padding-left: 77px;
+    padding-left: 76px;
+    padding-top: 51px;
+    padding-bottom: 60px;
   }
 
   .form__label {
@@ -440,13 +459,14 @@
 
   .form__legend {
     &--app-used {
-      padding: 0px 7px;
+      padding: 0px 8px;
     }
   }
 
   .form__contacts {
     width: 100%;
-    padding-bottom: 11px;
+    padding-top: 23px;
+    padding-bottom: 13px;
   }
 
   .form__contacts-wrapper {
@@ -455,16 +475,10 @@
   }
 
   .form__contact {
-    width: 371px;
+    width: 376px;
     margin: 0;
     &:first-of-type {
       margin: 0;
-    }
-  }
-
-  .form__input-text {
-    &--contacts {
-      width: 371px;
     }
   }
 
@@ -473,14 +487,14 @@
     margin-left: 0;
     margin-right: 0;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 0px;
+    padding-bottom: 10px;
   }
 
   .form__achievements-wrapper {
     display: flex;
-    height: 232px;
+    height: 161px;
     flex-flow: column wrap;
-    align-items: flex-start;
     & .form__box-label {
       flex-grow: 1;
     }
@@ -488,5 +502,35 @@
 
   .form__emotions {
     width: 100%;
+    padding-top: 12px;
+    padding-bottom: 25px;
+  }
+
+  .form__box-label {
+    &--radio {
+      margin-bottom: 44px;
+    }
+
+    &--checkbox {
+      margin-bottom: 24px;
+      &:last-of-type {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .form__textarea {
+    min-height: 128px;
+  }
+
+  .form__confirm {
+    margin-top: 65px;
+    margin-bottom: 0px;
+  }
+
+  .form__required {
+    &--desktop::before {
+      content: "для заполнения";
+    }
   }
 }
