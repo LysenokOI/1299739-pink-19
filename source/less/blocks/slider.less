@@ -1,7 +1,12 @@
+/*Block model*/
 .slider__toggles {
   display: flex;
   width: 66px;
   justify-content: space-between;
+}
+
+.slider__radio-btn {
+  display: none;
 }
 
 .slider__toggle {
@@ -13,6 +18,7 @@
   border-radius: 50%;
   background-color: @dark;
   opacity: 0.3;
+  cursor: pointer;
   &:hover {
     opacity: 1;
   }
@@ -21,8 +27,3 @@
   }
 }
 
-.slider__toggle--active {
-  border: 3px solid @dark;
-  background-color: @light;
-  opacity: 1;
-}

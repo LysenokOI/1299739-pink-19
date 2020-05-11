@@ -1,32 +1,27 @@
 /*Positioning*/
+.header {
+  position: relative;
+  z-index: 100;
+}
 
-.header__top-bar {
+.header__nav {
   position: relative;
   z-index: 100;
 }
 
 /*Block model*/
-.header__top-bar {
-  min-height: 66px;
-  padding-top: 22px;
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -20px;
 }
 
 /* Decorations */
-
-.header__top-bar {
-  background-color: @dark--opacity;
+.header {
+  background-color: rgba(0,0,0,0.3);
+  //background-color: #283645;
   color: @light;
 }
 
-.header__logo {
-  fill: @light;
-}
 
-.header__logo:hover {
-  fill: @pink;
-}
-
-.header__logo:active {
-  fill: @light;
-  opacity: 0.3;
-}

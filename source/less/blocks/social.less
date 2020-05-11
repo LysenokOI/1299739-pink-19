@@ -1,32 +1,43 @@
-/*Positioning*/
-
-
-/*Block model*/
 .social__list {
   display: flex;
-  width: 170px;
+  width: 175px;
   justify-content: space-between;
 }
 
 .social__link {
   display: flex;
+  width: 49px;
+  height: 49px;
+
+  border: solid 3px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  &:hover {
+    border-color: @dark;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+
 }
 
 .social__icon {
   margin: auto;
-}
 
-/*Decorations*/
-.social__icon {
   fill: @pink;
-  &--youtube {
-    margin-left: 14px;
+  &--facebook {
+    margin-top: 11px;
   }
-}
-
-.social__link {
-  border: solid 3px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
+  &--youtube {
+    margin-left: 16px;
+    margin-top: 14px;
+  }
+  &--academy {
+    height: 42px;
+    &:hover {
+      fill: @dark;
+    }
+    &:active {
+      fill: @dark--opacity;
+    }
+  }
 }

@@ -1,0 +1,146 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+/*Positioning*/
+  .effect__timer {
+    position: relative;
+  }
+
+  .effect__timer-24 {
+    position: absolute;
+  }
+
+  /*Block model*/
+
+  .effect {
+    display: flex;
+    padding-top: 24px;
+  }
+
+  .effect__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .effect__icon-timer {
+    width: 238px;
+  }
+
+  .effect__timer-24 {
+    height: 202px;
+    width: 202px;
+    border: 14px solid @pink;
+    border-radius: 50%;
+    left: 0px;
+    right: 0px;
+    top: 30px;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .effect__item {
+    width: 300px;
+    min-height: 202px;
+    margin-right: 10px;
+  }
+
+  .effect__title-first {
+    display: block;
+  }
+
+  .effect__title {
+    margin-bottom: 9px;
+  }
+
+  .effect__description {
+    margin-bottom: 8px;
+  }
+
+  /*Decorations*/
+  .effect__icon-timer {
+    fill: #dedede;
+  }
+
+  .effect__timer-24 {
+    font-size: 96px;
+    color: @pink;
+    font-family: "OpenSans-Bold";
+  }
+
+  .effect__title {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "OpenSans-Bold";
+    color: black;
+  }
+
+  .effect__link {
+    color: @pink;
+    border-bottom: 1px solid @pink;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /*Block model*/
+  .effect {
+    padding-top: 65px;
+    padding-bottom: 61px;
+  }
+
+  .effect__icon-timer {
+    width: 298px;
+  }
+
+  .effect__timer-24 {
+    height: 253px;
+    width: 253px;
+    margin-top: 40px;
+  }
+
+  .effect__item {
+    width: 525px;
+    min-height: 197px;
+    margin-right: 50px;
+    margin-top: 39px;
+  }
+
+  .effect__title-first {
+    display: inline-block;
+  }
+
+  .effect__title {
+    margin-bottom: 20px;
+  }
+
+  .effect__description {
+    margin-bottom: 30px;
+  }
+/*Decorations*/
+  .effect {
+    background-color: @grey;
+  }
+
+  .effect__timer-24 {
+    border-width: 17px;
+    font-size: 120px;
+  }
+
+  .effect__description {
+    font-size: 18px;
+    line-height: 30px;
+
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
