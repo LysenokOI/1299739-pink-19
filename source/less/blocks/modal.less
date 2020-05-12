@@ -1,12 +1,22 @@
 .modal {
-  display: flex;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  display: none;
   flex-direction: column;
   padding-top: 46px;
+  background-color: @light;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .modal__error {
+  top: 20%;
   padding-bottom: 50px;
+}
+
+.modal__sent {
+  top: 15%;
 }
 
 .modal__title {
@@ -26,6 +36,10 @@
   padding-top: 48px;
   padding-bottom: 52px;
   background-color: @grey;
+}
+
+.modal__show {
+  display: flex;
 }
 
 @media (min-width: @tablet-width) {
