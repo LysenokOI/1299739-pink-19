@@ -4,13 +4,18 @@
   padding-bottom: 41px;
 }
 
+.create-post-wrapper {
+  padding-top: 44px;
+  padding-bottom: 41px;
+}
+
 .create-post__image {
   width: 280px;
 }
 
 .create-post__filters-wrapper {
   padding-top: 34px;
-  padding-bottom: 17px;
+  padding-bottom: 0;
   padding-left: 15px;
   padding-right: 27px;
 }
@@ -22,7 +27,7 @@
 
 .create-post__range-sliders {
   width: 320px;
-  padding-bottom: 28px;
+  padding-bottom: 35px;
   margin-left: -35px;
   display: flex;
   justify-content: center;
@@ -32,15 +37,12 @@
 
 .create-post__range-slider {
   width: 242px;
-  margin-top: 25px;
-  display: none;
-  &--active {
-    display: block;
-  }
+  margin-top: 33px;
+  display: block;
 }
 
 .create-post__buttons {
-  padding-top: 12px;
+  padding-top: 37px;
 }
 
 .create-post__button {
@@ -55,6 +57,7 @@
 
 .create-post__edit {
   padding: 0;
+  background-color: transparent;
 
   cursor: pointer;
   fill: @dark--opacity;
@@ -63,9 +66,6 @@
     fill: rgba(0, 0, 0, 0.5);
   }
   &:active {
-    fill: @pink;
-  }
-  &--active {
     fill: @pink;
   }
 }
@@ -78,6 +78,7 @@
 
   .create-post__form {
     padding-top: 57px;
+    padding-bottom: 47px;
   }
 
   .create-post__form .container {
@@ -125,7 +126,7 @@
     }
     &--fill {
       margin-top: 14px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
     }
     &--contrast {
       margin-top: 18px;
@@ -164,8 +165,8 @@
       padding-bottom: 33px;
     }
     &--fill {
-      margin-top: 36px;
-      padding-bottom: 34px;
+      margin-top: 38px;
+      padding-bottom: 33px;
     }
     &--contrast {
       margin-top: 32px;

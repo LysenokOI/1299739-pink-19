@@ -16,7 +16,7 @@
 
 .range-slider__thumb {
   position: absolute;
-  top: -7px;
+  top: -6px;
   transform: translate(-50%);
   width: 15px;
   height: 15px;
@@ -28,5 +28,21 @@
   &:active {
     background-color: @pink;
   }
+  &--1 {
+    left: 82%;
+  }
 }
 
+@media (min-width: @tablet-width) {
+  .range-slider__thumb {
+    &--1 {
+      left: 69%;
+    }
+    &--2 {
+      left: 14%;
+    }
+    &--3 {
+      left: 46%;
+    }
+  }
+}

@@ -476,49 +476,54 @@
             <div class="create-post__filters-wrapper">
               <div class="create-post__filters">
 
-                <button class="create-post__edit create-post__edit--crop create-post__edit--active" type="button">
+                <label class="create-post__edit create-post__edit--crop" type="button" for="editor_1">
                   <svg class="create-post__filter create-post__filter--crop" x="0px" y="0px" width="48px" height="48px">
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
-                </button>
+                </label>
 
-                <button class="create-post__edit create-post__edit--fill" type="button">
+                <label class="create-post__edit create-post__edit--fill" type="button" for="editor_2">
                   <svg class="create-post__filter  create-post__filter--fill" x="0px" y="0px" width="48px"
                     height="48px">
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
-                </button>
+                </label>
 
-                <button class="create-post__edit create-post__edit--contrast" type="button">
+                <label class="create-post__edit create-post__edit--contrast" type="button" for="editor_3">
                   <svg class="create-post__filter create-post__filter--contrast" x="0px" y="0px" width="31.92px"
                     height="31.92px">
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
-                </button>
+                </label>
 
               </div>
 
               <div class="create-post__range-sliders range-slider">
-                <div
-                  class="create-post__range-slider create-post__range-slider--active create-post__range-slider--crop range-slider__container">
+                <div class="create-post__range-slider create-post__range-slider--crop range-slider__container"
+                  id="editor1">
                   <div class="range-slider__track ">
                     <div class="range-slider__progress"></div>
                   </div>
-                  <div class="range-slider__thumb"></div>
+                  <div class="range-slider__thumb range-slider__thumb--1"></div>
+                  <input type="range" value="85" name="range-crop" class="visually-hidden">
                 </div>
 
-                <div class="create-post__range-slider create-post__range-slider--fill range-slider__container">
+                <div class="create-post__range-slider create-post__range-slider--fill range-slider__container"
+                  id="editor2">
                   <div class=" range-slider__track ">
                     <div class="range-slider__progress"></div>
                   </div>
-                  <div class="range-slider__thumb"></div>
+                  <div class="range-slider__thumb range-slider__thumb--2"></div>
+                  <input type="range" value="10" name="range-fill" class="visually-hidden">
                 </div>
 
-                <div class="create-post__range-slider create-post__range-slider--contrast range-slider__container">
+                <div class="create-post__range-slider create-post__range-slider--contrast range-slider__container"
+                  id="editor3">
                   <div class=" range-slider__track ">
                     <div class="range-slider__progress"></div>
                   </div>
-                  <div class="range-slider__thumb"></div>
+                  <div class="range-slider__thumb range-slider__thumb--3"></div>
+                  <input type="range" value="55" name="range-contrast" class="visually-hidden">
                 </div>
 
               </div>
@@ -589,8 +594,7 @@
     </div>
 
   </footer>
-
-  <script src="js/create-post.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>

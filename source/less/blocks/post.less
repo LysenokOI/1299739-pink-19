@@ -102,8 +102,12 @@
 
   .post {
     width: 300px;
+    min-height: 455px;
+    padding-bottom: 23px;
     &--day {
       width: 620px;
+      padding-bottom: 13px;
+      margin-bottom: 50px;
     }
     &--day::after {
       top: 57px;
@@ -117,6 +121,7 @@
     width: 300px;
     &--day {
       width: 660px;
+      height: 509px;
     }
   }
 
@@ -126,6 +131,14 @@
     &--day {
       position: relative;
     }
+  }
+
+  .post__user-info {
+    margin-top: 17px;
+  }
+
+  .post__text {
+    margin-bottom: 12px;
   }
 
   .post__likes {
@@ -140,22 +153,33 @@
     }
     &--day {
       position: absolute;
-      top: 13px;
-      right: 29px;
+      top: 18px;
+      right: 31px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .posts__description {
+    width: 571px;
+    padding-bottom: 88px;
+  }
   .post {
+    min-height: 555px;
+    margin-bottom: 55px;
     &--day {
       width: 940px;
+      margin-bottom: 50px;
+    }
+    &:last-of-type {
+      margin-bottom: 55px;
     }
   }
   .post__image {
     &--day {
       width: 1200px;
       margin-left: -130px;
+      height: auto;
     }
   }
 }
