@@ -474,21 +474,30 @@
 
           <div class="create-post__controls">
             <div class="create-post__filters-wrapper">
+              <input type="range" value="85" name="range-crop" class="visually-hidden">
+              <input type="range" value="10" name="range-fill" class="visually-hidden">
+              <input type="range" value="55" name="range-contrast" class="visually-hidden">
+
+              <input type="radio" name="toggle" class="range visually-hidden" id="editor-1">
+              <input type="radio" name="toggle" class="range visually-hidden" id="editor-2">
+              <input type="radio" name="toggle" class="range visually-hidden" id="editor-3">
               <div class="create-post__filters">
-                <label class="create-post__edit create-post__edit--crop" type="button" for="editor_1">
+
+
+                <label class="create-post__edit create-post__edit--crop" type="button" for="editor-1">
                   <svg class="create-post__filter create-post__filter--crop" x="0px" y="0px" width="48px" height="48px">
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
                 </label>
 
-                <label class="create-post__edit create-post__edit--fill" type="button" for="editor_2">
+                <label class="create-post__edit create-post__edit--fill" type="button" for="editor-2">
                   <svg class="create-post__filter  create-post__filter--fill" x="0px" y="0px" width="48px"
                     height="48px">
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                 </label>
 
-                <label class="create-post__edit create-post__edit--contrast" type="button" for="editor_3">
+                <label class="create-post__edit create-post__edit--contrast" type="button" for="editor-3">
                   <svg class="create-post__filter create-post__filter--contrast" x="0px" y="0px" width="31.92px"
                     height="31.92px">
                     <use xlink:href="#icon-editor-contrast"></use>
@@ -498,10 +507,6 @@
               </div>
 
               <div class="create-post__range-sliders range-slider">
-                <input type="range" value="85" name="range-crop" class="visually-hidden" id="editor-1">
-                <input type="range" value="10" name="range-fill" class="visually-hidden" id="editor-2">
-                <input type="range" value="55" name="range-contrast" class="visually-hidden" id="editor-3">
-
                 <div class="create-post__range-slider create-post__range-slider--crop range-slider__container"
                   id="editor1">
                   <div class="range-slider__track ">
@@ -595,6 +600,9 @@
     </div>
 
   </footer>
+  <script>
+    document.getElementById('editor-1').setAttribute('checked', true);
+  </script>
   <script src="js/popup.js"></script>
 </body>
 

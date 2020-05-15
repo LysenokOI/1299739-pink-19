@@ -41,12 +41,6 @@
   display: none;
 }
 
-#editor-1:checked ~ . #editor-1,
-#product-2:checked ~ .site-wrapper #slide2,
-#product-3:checked ~ .site-wrapper #slide3 {
-  display: block;
-}
-
 .create-post__buttons {
   padding-top: 37px;
 }
@@ -74,6 +68,18 @@
   &:active {
     fill: @pink;
   }
+}
+
+#editor-1:checked ~ .create-post__range-sliders #editor1,
+#editor-2:checked ~ .create-post__range-sliders #editor2,
+#editor-3:checked ~ .create-post__range-sliders #editor3 {
+  display: block;
+}
+
+#editor-1:checked ~ .create-post__filters .create-post__edit--crop,
+#editor-2:checked ~ .create-post__filters .create-post__edit--fill,
+#editor-3:checked ~ .create-post__filters .create-post__edit--contrast {
+  fill: @pink;
 }
 
 @media (min-width: @tablet-width) {

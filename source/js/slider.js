@@ -67,10 +67,6 @@ function popupNav() {
     header.classList.toggle("nav__header-open");
     btnBurger.classList.toggle("nav__toggle-cross");
     btnCross.classList.toggle("nav__open");
-
-    if (window.innerWidth < 600) {
-      osWrapper.classList.toggle("os__padding");
-    }
   });
 }
 
