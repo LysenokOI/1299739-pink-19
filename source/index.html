@@ -224,10 +224,10 @@
 
         <div class="nav__toggle__wrapper">
           <button class="nav__toggle" type="button">
-            <svg class=" nav__toggle-burger" x="0px" y="0px" width="49.945px" height="24.007px">
+            <svg class="nav__toggle-burger" x="0px" y="0px" width="49.945px" height="24.007px">
               <use xlink:href="#icon-menu-burger"></use>
             </svg>
-            <svg class=" nav__toggle-cross" x="0px" y="0px" width="23.867px" height="23.867px">
+            <svg class="nav__toggle-cross" x="0px" y="0px" width="23.867px" height="23.867px">
               <use xlink:href="#icon-menu-cross"></use>
             </svg>
           </button>
@@ -564,17 +564,10 @@
       </ul>
     </div>
 
-    <div class="map-wrapper">
-      <div class="map">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="/img/bg-map-desktop@1x.jpg, /img/bg-map-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="/img/bg-map-tablet@1x.jpg, /img/bg-map-tablet@2x.jpg 2x">
-          <img class="map__image" src="/img/bg-map-mobile@1x.png" srcset="/img/bg-map-mobile@2x.png 2x" alt="карта">
-        </picture>
-        <svg class="map__marker">
-          <use xlink:href="#icon-map-marker" x="0px" y="0px" width="35.983px" height="35.983px"></use>
-        </svg>
-      </div>
+    <div class="map map-wrapper">
+      <iframe title="Карта с адресом компании Pink" class="map__image"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056511!2d30.320853351384628!3d59.93871916896556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1585993359985!5m2!1sen!2sru"
+        width="320" height="235" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
     <div class="footer footer--index container">
@@ -627,8 +620,10 @@
     </div>
 
   </footer>
-  <script src="js/picturefill.min.js"></script>
+
   <script src="js/slider.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>

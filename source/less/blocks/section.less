@@ -15,9 +15,11 @@
 }
 
 .section__description {
-
   text-align: center;
   line-height: 30px;
+  &--photo {
+    padding: 0 14px;
+  }
 }
 
 .section__title {
@@ -64,10 +66,12 @@
     font-size: 18px;
     margin: auto;
     &--form {
-
       &::after {
         content: "Пожалуйста, заполните форму ниже:";
       }
+    }
+    &--photo {
+      padding: 0;
     }
   }
 }

@@ -37,15 +37,17 @@
 
 .create-post__range-slider {
   width: 242px;
-  margin-top: 33px;
+  margin-top: 28px;
   display: none;
 }
 
 .create-post__buttons {
   padding-top: 37px;
+  background-color: transparent;
 }
 
 .create-post__button {
+  background-color: transparent;
   &:first-child {
     margin-bottom: 12px;
   }
@@ -62,6 +64,13 @@
   cursor: pointer;
   fill: @dark--opacity;
   border: none;
+  &--fill {
+    margin-left: -8px;
+    margin-top: 1px;
+  }
+  &--contrast {
+    margin-top: 7px;
+  }
   &:hover {
     fill: rgba(0, 0, 0, 0.5);
   }
@@ -134,15 +143,17 @@
     }
     &--crop{
       margin-top: -4px;
-      padding-bottom: 7px;
+      padding-bottom: 4px;
     }
     &--fill {
-      margin-top: 14px;
-    padding-bottom: 8px;
+      margin-left: 0px;
+      margin-top: 15px;
+      padding-bottom: 2px;
     }
     &--contrast {
       margin-top: 18px;
-      padding-bottom: 16px;
+      margin-left: 5px;
+      padding-bottom: 11px;
     }
   }
 
@@ -174,11 +185,11 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     &--crop {
       margin-top: 0px;
-      padding-bottom: 33px;
+      padding-bottom: 34px;
     }
     &--fill {
-      margin-top: 38px;
-      padding-bottom: 33px;
+      margin-top: 36px;
+      padding-bottom: 34px;
     }
     &--contrast {
       margin-top: 32px;
@@ -199,6 +210,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .create-post-wrapper {
+    padding-top: 3px;
+    padding-bottom: 66px;
+  }
+
   .create-post__form {
     padding: 0;
     background-color: @light;

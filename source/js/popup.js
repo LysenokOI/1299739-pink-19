@@ -4,7 +4,6 @@ function popupNav() {
   var header = document.querySelector(".header");
   var btnBurger = document.querySelector(".nav__toggle-burger");
   var btnCross = document.querySelector(".nav__toggle-cross");
-  var osWrapper = document.querySelector(".os__wrapper");
 
   tglNav.addEventListener('click', function (e) {
     e.preventDefault();
@@ -13,11 +12,7 @@ function popupNav() {
     btnBurger.classList.toggle("nav__toggle-cross");
     btnCross.classList.toggle("nav__open");
 
-    if (window.innerWidth < 600) {
-      osWrapper.classList.toggle("os__padding");
-    }
   });
 }
-
 
 popupNav();

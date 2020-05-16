@@ -4,7 +4,7 @@
 
   width: 320px;
   margin: 0 auto;
-  margin-top: 102px;
+  margin-top: 97px;
   order: 1;
   overflow: hidden;
 }
@@ -17,7 +17,7 @@
 /*Block model*/
 .tariffs {
   position: relative;
-  margin-top: 33px;
+  margin-top: 38px;
   padding-bottom: 47px;
   display: flex;
   flex-direction: column;
@@ -196,6 +196,7 @@
   .tariffs__filters {
     position: unset;
     margin-top: auto;
+    min-width: 155px;
   }
 
   .tariffs__toggle-wrapper {
@@ -203,13 +204,13 @@
   }
 
   .tariffs {
-    margin-top: 17px;
-    padding-bottom: 66px;
+    margin-top: 21px;
+    padding-bottom: 70px;
   }
 
   .tariffs-wrapper {
     width: 620px;
-    margin-top: 95px;
+    margin-top: 87px;
     overflow: unset;
   }
 
@@ -231,7 +232,7 @@
   }
 
   .tariffs__col {
-    min-height: 48px;
+    min-height: 47px;
   }
 
   .tariffs__value {
@@ -252,9 +253,9 @@
   }
 
   .tariffs__name {
-    margin-top: 7px;
-
+    margin-top: 4px;
     font-size: 16px;
+    margin-bottom: -4px;
   }
 
   .tariffs__cost {
@@ -267,8 +268,8 @@
       left: 0px;
     }
     &::after {
-      left: 5px;
-      top: 7px;
+      left: 6px;
+      top: 4px;
     }
   }
 }
@@ -276,10 +277,12 @@
 @media (min-width: @desktop-width) {
   .tariffs-wrapper {
     width: 940px;
+    margin-top: 155px;
   }
 
   .tariffs {
-    padding-bottom: 98px;
+    margin-top: 0px;
+    padding-bottom: 95px;
   }
 
   .tariffs__item {

@@ -2,7 +2,7 @@
 
 /*Block Model*/
 .os__wrapper {
-  padding-top: 26px;
+  padding-top: 28px;
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -37,10 +37,6 @@
   text-align: center;
 }
 
-.os__padding {
-  height: 389px;
-  padding-bottom: 130px;
-}
 
 @media (min-width: @tablet-width) {
   .os__wrapper {
@@ -76,23 +72,33 @@
 
 @media (min-width: @desktop-width) {
   .os__wrapper {
-    min-height: 360px;
+    min-height: 362px;
     padding-top: 51px;
   }
 
   .os__description {
-    margin-left: -8px;
+    margin-left: -22px;
   }
 
   .os__list {
     width: 205px;
     padding-left: 0px;
-    margin-left: 56px;
+    margin-left: 47px;
+
   }
 
   .os__button {
-    margin-left: 8px;
+    margin-left: 0px;
     font-size: 21px;
+  }
+
+  .os__link {
+    &--android {
+      margin-top: 7px;
+    }
+    &--windows {
+      margin-top: 11px;
+    }
   }
 }
 

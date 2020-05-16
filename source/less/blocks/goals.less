@@ -1,7 +1,7 @@
 /*Positioning*/
 .goals__background {
   position: relative;
-  margin-top: 25px;
+  margin-top: 37px;
   background-color: @grey;
   &::before {
     content: "";
@@ -29,7 +29,7 @@
 .goals__container {
   display: flex;
   flex-direction: column;
-  padding-top: 91px;
+  padding-top: 80px;
 }
 
 .goals__images {
@@ -51,16 +51,19 @@
 
 @media (min-width: @tablet-width) {
   .goals {
-    padding-top: 49px;
+    padding-top: 50px;
   }
 
   .goals__images {
     position: relative;
     z-index: 100;
+    order: 1;
+    height: 481px;
+    margin-top: 4px;
   }
 
   .goals__background {
-    margin-top: 42px;
+    margin-top: 47px;
   }
 
   .goals__container {
@@ -72,12 +75,7 @@
   .goals__list {
     width: 310px;
     order: 2;
-    margin-top: 78px;
-  }
-
-  .goals__images {
-    order: 1;
-    height: 481px;
+    margin-top: 74px;
   }
 
   .goals__item {
@@ -96,7 +94,7 @@
 
 @media (min-width: @desktop-width) {
   .goals {
-    padding-top: 66px;
+    padding-top: 67px;
   }
 
   .goals__background {
@@ -123,7 +121,7 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    margin-top: 57px;
+    margin-top: 56px;
     justify-content: space-between;
   }
 
@@ -136,7 +134,7 @@
   .goals__title{
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .goals__description {

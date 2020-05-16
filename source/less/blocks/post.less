@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.posts__description {
+    padding-bottom: 49px;
+}
+
 .post {
   position: relative;
 
@@ -23,7 +27,7 @@
     content: "панорама дня";
     width: 140px;
     height: 36px;
-
+    font-size: 12px;
     font-family: "OpenSans-Bold", Arial, sans-serif;
     background-color: @pink;
     text-transform: uppercase;
@@ -41,6 +45,9 @@
 
   padding-left: 17px;
   padding-right: 11px;
+  &--day {
+    padding-right: 13px;
+  }
 }
 
 .post__user-info {
@@ -169,10 +176,19 @@
     margin-bottom: 55px;
     &--day {
       width: 940px;
-      margin-bottom: 50px;
+      margin-bottom: 49px;
+      &::after {
+        top: 54px;
+      }
     }
     &:last-of-type {
       margin-bottom: 55px;
+    }
+  }
+
+  .post__likes {
+    &--day {
+      right: 33px;
     }
   }
   .post__image {
