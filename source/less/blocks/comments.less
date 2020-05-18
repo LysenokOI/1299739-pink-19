@@ -5,7 +5,6 @@
   z-index: 0;
 
   padding-top: 44px;
-  //padding-bottom: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -38,18 +37,14 @@
 }
 
 /*Decorations*/
-.comments__list {
-  transition: transform 0.7s ease;
-}
-
 .comments__title,
 .comments__description {
   line-height: 30px;
 }
 
-#comments__btn-1:checked ~.comments__toggles-wrapper .slider__toggle[for="comments__btn-1"],
-#comments__btn-2:checked ~.comments__toggles-wrapper .slider__toggle[for="comments__btn-2"],
-#comments__btn-3:checked ~.comments__toggles-wrapper .slider__toggle[for="comments__btn-3"] {
+.comments__btn-1:checked ~ .comments__toggles-wrapper .slider__toggle[for="comments__btn-1"],
+.comments__btn-2:checked ~ .comments__toggles-wrapper .slider__toggle[for="comments__btn-2"],
+.comments__btn-3:checked ~ .comments__toggles-wrapper .slider__toggle[for="comments__btn-3"] {
   border: 3px solid @dark;
   background-color: @light;
   opacity: 1;
@@ -69,32 +64,20 @@
     order: 2;
     margin-top: 34px;
     margin-bottom: 3px;
+    font-size: 20px;
   }
 
   .comments__subtitle {
     display: block;
     text-align: center;
     order: 3;
+    line-height: 30px;
   }
 
   .comments__description {
     order: 1;
-  }
-
-  /*Decorations*/
-
-  .comments__title {
-    font-size: 20px;
-  }
-
-  .comments__description {
     font-size: 18px;
   }
-
-  .comments__subtitle {
-    line-height: 30px;
-  }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -126,9 +109,11 @@
     background-color: transparent;
     cursor: pointer;
     opacity: 0.3;
+
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.1;
     }
@@ -140,7 +125,7 @@
 
   .comments__next {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='rgba(0, 0, 0, 1)' x='0px' y='0px' width='21.706px' height='41.719px' viewBox='0 0 21.706 41.719' enable-background='new 0 0 21.706 41.719' xml:space='preserve'%3E%3Cpath d='M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z'/%3E%3C/svg%3E");
-    right: 0px;
+    right: 0;
   }
 
   .comments__list-wrapper {
