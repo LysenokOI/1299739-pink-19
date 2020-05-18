@@ -47,4 +47,3 @@ function modalSend() {
 }
 
 formValid();
-

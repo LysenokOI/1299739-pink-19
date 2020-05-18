@@ -52,4 +52,3 @@ toggleBtns.forEach(function (item) {
     slide(index);
   })
 });
-
