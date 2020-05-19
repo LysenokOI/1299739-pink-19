@@ -185,7 +185,7 @@
   <header class="header">
     <div class="container">
       <nav class="header__nav nav">
-        <a class="nav__logo__wrapper" href="index.html">
+        <a class="nav__logo__wrapper" href="index.html" title="PINK">
           <svg class="nav__logo nav__logo--mobile" width="74.426" height="22.859">
             <use xlink:href="#icon-pink-white-mobile"></use>
           </svg>
@@ -213,11 +213,13 @@
             <a class="nav__link" href="index.html" title="Главная">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="photo.html" title="Фотографии">Фотографии</a>
+            <a class="nav__link" href="photo.html" title="Фотографии">
+              <p class="nav__link--current" title="Фотографии">Фотографии</p>
+            </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--current" href="form.html">
-              <p class="nav__link--current" title="Конкурс">Конкурс</p>
+            <a class="nav__link" href="form.html">
+              Конкурс
             </a>
           </li>
           <li class="nav__item">
@@ -544,10 +546,11 @@
             </div>
 
             <div class="create-post__buttons">
-              <button class="create-post__button button__oval button button__oval--upload" type="submit">
+              <button class="create-post__button button__oval button button__oval--upload" type="submit"
+                title="Запостить">
                 Запостить
               </button>
-              <button class="create-post__button button__oval button button__oval--cancel" type="reset">
+              <button class="create-post__button button__oval button button__oval--cancel" type="reset" title="Отмена">
                 Отмена
               </button>
             </div>

@@ -235,14 +235,16 @@
 
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" title="Главная">Главная</a>
+            <a class="nav__link" title="Главная">
+              <p class="nav__link--current">Главная</p>
+            </a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="photo.html" title="Фотографии">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--current" href="form.html">
-              <p class="nav__link--current" title="Конкурс">Конкурс</p>
+            <a class="nav__link" href="form.html" title="Конкурс">
+              Конкурс
             </a>
           </li>
           <li class="nav__item">
@@ -288,24 +290,27 @@
         <h2 class="visually-hidden">Ссылки на приложения</h2>
         <div class="os__wrapper">
           <a class="os__button button button__oval button__oval--download"
-            href="https://play.google.com/store/apps?hl=ru">Скачать приложение</a>
+            href="https://play.google.com/store/apps?hl=ru" title="Скачать приложение">Скачать приложение</a>
           <ul class="os__list">
             <li class="os__item">
-              <a class="os__link os__link--apple" href="https://play.google.com/store/apps?hl=ru">
+              <a class="os__link os__link--apple" href="https://play.google.com/store/apps?hl=ru"
+                title="Приложение на iPhone">
                 <svg x="0px" y="0px" width="46.21px" height="56.753px">
                   <use xlink:href="#logo-apple"></use>
                 </svg>
               </a>
             </li>
             <li class="os__item">
-              <a class="os__link os__link--android" href="https://play.google.com/store/apps?hl=ru">
+              <a class="os__link os__link--android" href="https://play.google.com/store/apps?hl=ru"
+                title="Приложение на Android">
                 <svg x="0px" y="0px" width="42.084px" height="47.041px">
                   <use xlink:href="#logo-android"></use>
                 </svg>
               </a>
             </li>
             <li class="os__item">
-              <a class="os__link os__link--windows" href="#">
+              <a class="os__link os__link--windows" href="https://play.google.com/store/apps?hl=ru"
+                title="Приложение на Windows Phone">
                 <svg x="0px" y="0px" width="43.922px" height="41.992px">
                   <use xlink:href="#logo-microsoft"></use>
                 </svg>
@@ -402,7 +407,8 @@
             от использования приложения длится
             целые сутки!
           </p>
-          <a class="effect__link" href="http://www.science.yoread.ru/news.php?readmore=1350">Узнать больше об
+          <a class="effect__link" href="http://www.science.yoread.ru/news.php?readmore=1350" title="Исследования">Узнать
+            больше об
             исследовании</a>
         </div>
       </div>
@@ -418,8 +424,8 @@
           <label for="comments__btn-2" class="slider__toggle"></label>
           <label for="comments__btn-3" class="slider__toggle"></label>
         </div>
-        <button class="comments__prev js__prev"></button>
-        <button class="comments__next js__next"></button>
+        <button class="comments__prev js__prev" title="Предыдущий коммент"></button>
+        <button class="comments__next js__next" title="Следующий коммент"></button>
         <div class="comments__list-wrapper">
           <ul class="comments__list">
             <li class="comments__item list__item js__slider-item js__visible">
@@ -456,9 +462,9 @@
       <input type="radio" id="tariffs__btn-3" class="slider__radio-btn tariffs__btn-3" name="tariffs__toggle">
       <div class="tariffs__toggle-wrapper container">
         <div class="slider__toggles">
-          <label for="tariffs__btn-1" class="slider__toggle"></label>
-          <label for="tariffs__btn-2" class="slider__toggle"></label>
-          <label for="tariffs__btn-3" class="slider__toggle"></label>
+          <label for="tariffs__btn-1" class="slider__toggle" title="Первая колонка"></label>
+          <label for="tariffs__btn-2" class="slider__toggle" title="Вторая колонка"></label>
+          <label for="tariffs__btn-3" class="slider__toggle" title="Третья колонка"></label>
         </div>
       </div>
 
@@ -554,15 +560,16 @@
       <ul class="contacts__list">
         <li class="contacts__item list__item">
           <h3 class="contacts__title list__title">Звоните:</h3>
-          <a class="contacts__type" href="tel:+78125550555">+7 (812) 555-66-66</a>
+          <a class="contacts__type" href="tel:+78125550555" title="Телефон +7 812 5556666">+7 (812) 555-66-66</a>
         </li>
         <li class="contacts__item list__item">
           <h3 class="contacts__title list__title">Пишите:</h3>
-          <a class="contacts__type" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacts__type" href="mailto:mail@htmlacademy.ru"
+            title="Почта mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item list__item">
           <h3 class="contacts__title list__title">Приезжайте в гости:</h3>
-          <span class="contacts__type">ул. Большая Конюшенная, 19/8</span>
+          <span class="contacts__type" title="Адрес ул. Большая Конюшенная, 19/8">ул. Большая Конюшенная, 19/8</span>
         </li>
       </ul>
     </div>
