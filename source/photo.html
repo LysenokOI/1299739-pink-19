@@ -232,22 +232,22 @@
   <main class="main">
 
     <section class="main-wrapper ">
-
+      <h2 class="visually-hidden">Заголовок страницы</h2>
       <div class="main__background">
         <picture>
           <source media="(min-width: 1200px)" srcset="/img/bg-back-desktop@1x.jpg, /img/bg-back-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="/img/bg-back-tablet@1x.jpg, /img/bg-back-tablet@2x.jpg 2x">
-          <img src="/img/bg-back-mobile@1x.jpg" srcset="/img/bg-back-mobile@2x.jpg 2x">
+          <img src="/img/bg-back-mobile@1x.jpg" srcset="/img/bg-back-mobile@2x.jpg 2x" alt="background">
         </picture>
       </div>
 
-      <article class="main__title-wrapper main__title-wrapper--photo">
+      <div class="main__title-wrapper main__title-wrapper--photo">
         <div class="container">
-          <h1 class="main__title main__title--photo">
+          <h2 class="main__title main__title--photo">
             Фотографии пользователей
-          </h1>
+          </h2>
         </div>
-      </article>
+      </div>
     </section>
 
     <section class="posts container">
@@ -458,6 +458,7 @@
     </section>
 
     <section class="create-post">
+      <h2 class="visually-hidden">Редактирование фотографии для поста</h2>
 
       <div class="container">
         <div class="section__description-wrapper create-post-wrapper">
@@ -491,20 +492,20 @@
 
               <div class="create-post__filters">
 
-                <label class="create-post__edit create-post__edit--crop" type="button" for="editor-1">
+                <label class="create-post__edit create-post__edit--crop" for="editor-1">
                   <svg class="create-post__filter create-post__filter--crop" x="0px" y="0px" width="48px" height="48px">
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
                 </label>
 
-                <label class="create-post__edit create-post__edit--fill" type="button" for="editor-2">
+                <label class="create-post__edit create-post__edit--fill" for="editor-2">
                   <svg class="create-post__filter  create-post__filter--fill" x="0px" y="0px" width="48px"
                     height="48px">
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                 </label>
 
-                <label class="create-post__edit create-post__edit--contrast" type="button" for="editor-3">
+                <label class="create-post__edit create-post__edit--contrast" for="editor-3">
                   <svg class="create-post__filter create-post__filter--contrast" x="0px" y="0px" width="31.92px"
                     height="31.92px">
                     <use xlink:href="#icon-editor-contrast"></use>
