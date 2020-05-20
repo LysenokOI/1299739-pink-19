@@ -1,14 +1,20 @@
 /*Positioning*/
 .goals__background {
   position: relative;
-}
+  margin-top: 37px;
+  background-color: @grey;
 
-.goals__bg-triangle-white {
-  position: absolute;
-  z-index: 0;
-  top: 0px;
-  width: 100%;
-  height: auto;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='94.074' width='1200' version='1.0'%3E%3Cpath fill='%23fff' d='M1200 0H0v94.074z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+  }
 }
 
 .goals__list {
@@ -24,56 +30,54 @@
 .goals__container {
   display: flex;
   flex-direction: column;
-}
-
-.goals__list {
-  margin-top: 115px;
+  padding-top: 80px;
 }
 
 .goals__images {
-    margin-top: 8px;
-    display: flex;
-    justify-content: center;
-    height: 277px;
-    overflow: hidden;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  height: 277px;
+  overflow: hidden;
 }
 
 .goals__image {
   display: none;
+
   &:last-child {
     display: flex;
   }
 }
 
 /*Decorations*/
-.goals__background {
-  background-color: @grey;
-}
 
 @media (min-width: @tablet-width) {
+  .goals {
+    padding-top: 50px;
+  }
+
   .goals__images {
     position: relative;
     z-index: 100;
+    order: 1;
+    height: 481px;
+    margin-top: 4px;
   }
 
   .goals__background {
-    margin-top: 42px;
+    margin-top: 47px;
   }
 
   .goals__container {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 0;
   }
 
   .goals__list {
     width: 310px;
     order: 2;
-    margin-top: 78px;
-  }
-
-  .goals__images {
-    order: 1;
-    height: 481px;
+    margin-top: 74px;
   }
 
   .goals__item {
@@ -92,7 +96,7 @@
 
 @media (min-width: @desktop-width) {
   .goals {
-    padding-top: 66px;
+    padding-top: 67px;
   }
 
   .goals__background {
@@ -104,7 +108,7 @@
   }
 
   .goals__images {
-    margin-top: 0px;
+    margin-top: 0;
     height: 302px;
     display: flex;
     justify-content: space-between;
@@ -119,20 +123,20 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    margin-top: 57px;
+    margin-top: 56px;
     justify-content: space-between;
   }
 
   .goals__item {
     width: 238px;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
-  .goals__title{
+  .goals__title {
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .goals__description {

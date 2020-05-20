@@ -1,18 +1,11 @@
-/*Block Model*/
-
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 280px;
   height: 55px;
-
-}
-
-/*Decoration*/
-.button {
   font-size: 18px;
-  font-family: "OpenSans-Bold", Arial, sans-serif;
+  font-family: "OpenSans-Bold", "Arial", sans-serif;
   border: 3px solid;
 }
 
@@ -23,23 +16,26 @@
 .button__oval--download {
   color: @light;
   border-color: @light;
+
   &:hover {
     background-color: @light;
     color: @pink;
   }
+
   &:active {
     color: @pink--opacity;
   }
 }
 
-
 .button__oval--upload {
   border-color: @pink;
   color: @pink;
+
   &:hover {
     background-color: @pink;
     color: @light;
   }
+
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
@@ -49,9 +45,11 @@
   border-color: @dark;
   color: @dark;
   opacity: 0.1;
+
   &:hover {
     opacity: 0.3;
   }
+
   &:active {
     background-color: @dark;
     color: rgba(255, 255, 255, 0.3);
@@ -65,14 +63,16 @@
   border-radius: 3px;
   color: @light;
   text-transform: uppercase;
+
   &:hover {
     background-color: #1c9b5e;
   }
+
   &:active {
-    color: @light--opacity;;
+    color: @light--opacity;
   }
+
   &:disabled {
-  background-color: @disabled;
+    background-color: @disabled;
   }
 }
-

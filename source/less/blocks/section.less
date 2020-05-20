@@ -1,41 +1,39 @@
-/*Positioning*/
 .section__title-wrapper {
   position: relative;
   z-index: 100;
 }
 
-/*Block model*/
 .section__description-wrapper {
   display: flex;
   padding-top: 45px;
   padding-bottom: 48px;
+
   &--form {
     padding-bottom: 34px;
   }
 }
 
 .section__description {
-
   text-align: center;
   line-height: 30px;
+
+  &--photo {
+    padding: 0 14px;
+  }
 }
 
 .section__title {
   text-align: center;
+  font-family: "OpenSans-Light", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
 }
 
 .section__item {
   &:last-child {
     margin-top: 30px;
   }
-}
-
-/*Decorations*/
-.section__title {
-  font-family: "OpenSans-Light", Arial, sans-serif;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: normal;
 }
 
 @media (min-width: @tablet-width) {
@@ -53,6 +51,7 @@
 
   .section__description-wrapper {
     margin: auto;
+
     &--form {
       padding-top: 92px;
       padding-bottom: 71px;
@@ -63,11 +62,15 @@
   .section__description {
     font-size: 18px;
     margin: auto;
-    &--form {
 
+    &--form {
       &::after {
         content: "Пожалуйста, заполните форму ниже:";
       }
+    }
+
+    &--photo {
+      padding: 0;
     }
   }
 }

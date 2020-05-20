@@ -1,18 +1,15 @@
-/*Positioning*/
 .main-wrapper {
   position: relative;
-
   margin-top: -66px;
   padding-top: 66px;
   min-height: 237px;
   overflow: hidden;
-
   background-color: @dark;
   color: @light;
+
   &--index {
     overflow: unset;
   }
-
 }
 
 .main__background {
@@ -27,14 +24,15 @@
 .main__title-wrapper {
   position: relative;
   z-index: 100;
+  margin-top: 23px;
 
-  margin-top: 30px;
   &--index {
     height: auto;
     min-height: 60px;
   }
+
   &--photo {
-    width: 360px;
+    margin-top: 30px;
   }
 }
 
@@ -45,13 +43,12 @@
   height: 286px;
   margin: 0 auto;
   width: 320px;
-  margin-top: 20px;
+  margin-top: 27px;
 }
 
 .main__os {
   position: relative;
   z-index: 100;
-
   background-color: #17212d;
 }
 
@@ -62,7 +59,7 @@
   font-size: 24px;
   line-height: 30px;
 
-  font-family: "OpenSans-Light", Arial, sans-serif;
+  font-family: "OpenSans-Light", "Arial", sans-serif;
 }
 
 @media (min-width: @tablet-width) {
@@ -71,6 +68,7 @@
     margin-top: -110px;
     padding-top: 110px;
     overflow: hidden;
+
     &--index {
       min-height: 729px;
     }
@@ -83,27 +81,32 @@
   }
 
   .main__title-wrapper {
-    margin-top: 81px;
+    margin-top: 70px;
+
     &--index {
-      margin-top: 103px;
+      margin-left: 15px;
+      margin-top: 81px;
     }
   }
 
   .main__title {
     font-size: 50px;
-    line-height: normal;
+    line-height: 60px;
+
     &--index {
       width: 240px;
       font-size: 40px;
+      margin-left: 15px;
+      line-height: 48px;
     }
   }
 
   .main__background-hand {
     position: absolute;
     z-index: 100;
-    left: 0;
-    right: 62px;
-    bottom: 0;
+    left: -20px;
+    right: 0;
+    bottom: -8px;
     width: 700px;
     height: auto;
     margin: auto;
@@ -111,8 +114,8 @@
 
   .main__os {
     width: 660px;
-    padding: 0 20px;
     margin: 0 auto;
+    padding: 0;
 
     background-color: transparent;
   }
@@ -121,30 +124,46 @@
 @media (min-width: @desktop-width) {
   .main-wrapper {
     min-height: 394px;
+
     &--index {
-      min-height: 854px;
+      min-height: 853px;
     }
   }
 
   .main__background {
     height: 394px;
+
     &--index {
       overflow: unset;
     }
   }
 
+  .main__background-hand {
+    width: 892px;
+    left: -16px;
+  }
+
   .main__title-wrapper {
     width: 940px;
     margin: 0 auto;
-    margin-top: 74px;
-    &--index{
-      margin-top: 121px;
+    margin-top: 63px;
+
+    &--index {
+      margin-top: 109px;
     }
   }
 
   .main__title {
     &--index {
+      font-size: 50px;
       margin-left: 30px;
+      line-height: 60px;
+    }
+
+    &--photo {
+      width: 400px;
+      text-align: center;
+      margin: 0 auto;
     }
   }
 

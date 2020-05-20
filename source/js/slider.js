@@ -10,16 +10,15 @@ var listRow = document.querySelector(".comments__list");
 var toggleBtns = document.querySelectorAll(".slider__toggle");
 var sliderList = document.querySelectorAll(".js__slider-item");
 
+window.addEventListener('resize', function (e) {
+  slide(currentIndex)
+});
+
+
 var slide = function (index) {
-  var winWidth;
-  if (window.innerWidth > 1200) {
-    winWidth = 940;
-  } else if (window.innerWidth > 660) {
-    winWidth = 620;
-  } else {
-    winWidth = 280;
-  }
-  offset = winWidth * index; // 620 280
+  var winWidth = document.querySelector('.comments__item').getBoundingClientRect().width
+
+  offset = winWidth * index;
   listRow.style.transform = 'translateX(-' + offset + 'px)';
 };
 
@@ -48,6 +47,8 @@ button_prev.addEventListener('click', function (e) {
 
 toggleBtns.forEach(function (item) {
   item.addEventListener('click', function (e) {
-    [].slice.call(toggleBtns).indexOf(item)
+    var index = [].slice.call(toggleBtns).indexOf(item);
+    currentIndex = index;
+    slide(index);
   })
 });
