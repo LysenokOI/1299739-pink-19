@@ -1,13 +1,13 @@
-.posts {
+.post {
   display: flex;
   flex-direction: column;
 }
 
-.posts__description {
+.post__description {
   padding-bottom: 49px;
 }
 
-.post {
+.post__item {
   position: relative;
   margin-bottom: 20px;
   padding-bottom: 19px;
@@ -95,20 +95,20 @@
 
 
 @media (min-width: @tablet-width) {
-  .posts {
+  .post {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .posts__description {
+  .post__description {
     width: 450px;
     margin: 0 auto;
     padding-top: 92px;
     padding-bottom: 76px;
   }
 
-  .post {
+  .post__item {
     width: 300px;
     min-height: 455px;
     padding-bottom: 23px;
@@ -176,12 +176,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .posts__description {
+  .post__description {
     width: 571px;
     padding-bottom: 88px;
   }
 
-  .post {
+  .post__item {
     min-height: 555px;
     margin-bottom: 55px;
 

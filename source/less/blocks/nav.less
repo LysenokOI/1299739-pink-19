@@ -1,7 +1,7 @@
 
 /*Block model*/
 
-.nav__logo__wrapper {
+.nav__logo-wrapper {
   padding-top: 22px;
   margin-left: 20px;
   min-height: 66px;
@@ -28,7 +28,7 @@
   }
 }
 
-.nav__toggle__wrapper {
+.nav__toggle-wrapper {
   margin-left: auto;
   padding-top: 21px;
   margin-right: 20px;
@@ -75,8 +75,6 @@
   }
 }
 
-/*Decoration*/
-
 .nav__toggle {
   padding: 0;
   background-color: transparent;
@@ -94,7 +92,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .nav__logo__wrapper {
+  .nav__logo-wrapper {
     padding-top: 26px;
     min-height: 109px;
   }
@@ -109,13 +107,13 @@
     }
   }
 
-  .nav__toggle__wrapper {
+  .nav__toggle-wrapper {
     padding-top: 43px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .nav__logo__wrapper {
+  .nav__logo-wrapper {
     margin-left: 21px;
   }
 
@@ -129,7 +127,7 @@
     }
   }
 
-  .nav__toggle__wrapper {
+  .nav__toggle-wrapper {
     display: none;
   }
 
@@ -160,8 +158,10 @@
     font-family: "OpenSans", "Arial", sans-serif;
     text-transform: capitalize;
     cursor: pointer;
+  }
 
-    &--current::after {
+  .nav__link-current {
+    &::after {
       display: flex;
       content: "";
       border-bottom: 2px solid @light;
