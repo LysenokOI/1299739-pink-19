@@ -20,7 +20,7 @@ var webp = require("gulp-webp");
 
 gulp.task("webp", function () {
   return gulp.src("build/img/**/*.{png,jpg}")
-    //.pipe(webp({ quality: 90 }))
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"))
 });
 
@@ -78,12 +78,6 @@ gulp.task("images", function () {
     .pipe(gulp.dest("source/img"))
     .pipe(server.stream());
 });
-
-gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png.jpg}")
-    .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("build/img"));
-})
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
