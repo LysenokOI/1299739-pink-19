@@ -1,7 +1,6 @@
-/*Positioning*/
 .goals__background {
   position: relative;
-  margin-top: 37px;
+  margin-top: 29px;
   background-color: @grey;
 
   &::before {
@@ -22,7 +21,6 @@
   z-index: 100;
 }
 
-/*Block model*/
 .goals {
   padding-top: 41px;
 }
@@ -30,11 +28,15 @@
 .goals__container {
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding-top: 88px;
+}
+
+.goals__item {
+  margin-bottom: 33px;
 }
 
 .goals__images {
-  margin-top: 8px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   height: 277px;
@@ -48,8 +50,6 @@
     display: flex;
   }
 }
-
-/*Decorations*/
 
 @media (min-width: @tablet-width) {
   .goals {

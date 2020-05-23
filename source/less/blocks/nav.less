@@ -2,13 +2,15 @@
 /*Block model*/
 
 .nav__logo-wrapper {
-  padding-top: 22px;
+  padding-top: 5px;
   margin-left: 20px;
   min-height: 66px;
+  transform: translateX(-72px);
 }
 
 .nav__logo {
   fill: @light;
+  cursor: pointer;
 
   &:hover {
     fill: @pink;
@@ -18,20 +20,16 @@
     fill: @light;
     opacity: 0.3;
   }
-
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
 }
 
 .nav__toggle-wrapper {
   margin-left: auto;
   padding-top: 21px;
   margin-right: 20px;
+}
+
+.nav__toggle {
+  cursor: pointer;
 }
 
 .nav__toggle-cross {
@@ -95,16 +93,7 @@
   .nav__logo-wrapper {
     padding-top: 26px;
     min-height: 109px;
-  }
-
-  .nav__logo {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
-    }
+    transform: none;
   }
 
   .nav__toggle-wrapper {
@@ -115,16 +104,6 @@
 @media (min-width: @desktop-width) {
   .nav__logo-wrapper {
     margin-left: 21px;
-  }
-
-  .nav__logo {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
   }
 
   .nav__toggle-wrapper {

@@ -12,21 +12,16 @@
   display: flex;
   justify-content: center;
   margin-bottom: 41px;
+  fill: #283645;
+  cursor: pointer;
 
-  & .footer__logo-text {
-    fill: @dark;
-  }
-
-  &:hover .footer__logo-text {
+  &:hover {
     fill: @pink;
   }
 
   &:active {
     opacity: 0.3;
-
-    & .footer__logo-text {
-      fill: @dark;
-    }
+    fill: @dark;
   }
 }
 
@@ -53,6 +48,14 @@
     padding-top: 36px;
     display: flex;
     justify-content: space-between;
+
+    &--index {
+      padding-bottom: 8px;
+    }
+
+    &--photo {
+      padding-bottom: 10px;
+    }
   }
 
   .footer__social {
@@ -70,19 +73,14 @@
 @media (min-width: @desktop-width) {
   .footer {
     padding-top: 70px;
+    padding-bottom: 66px;
 
     &--photo {
       padding-top: 98px;//
     }
-  }
 
-  .footer__logo {
-    &--mobile {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
+    &--form {
+      padding-top: 21px;
     }
   }
 
