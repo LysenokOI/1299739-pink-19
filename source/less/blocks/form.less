@@ -505,12 +505,7 @@
 
   .form__achievements-wrapper {
     display: flex;
-    height: 161px;
-    flex-flow: column wrap;
-
-    & .form__box-label {
-      flex-grow: 1;
-    }
+    flex-flow: row wrap;
   }
 
   .form__emotions {
@@ -525,10 +520,38 @@
     }
 
     &--checkbox {
-      margin-bottom: 24px;
+      margin-bottom: 51px;
+      flex-grow: 1;
+      flex-basis: 266px;
 
-      &:last-of-type {
-        margin-bottom: 24px;
+      &:nth-child(1) {
+        order: 1;
+        flex-basis: 315px;
+      }
+
+      &:nth-child(2) {
+        order: 4;
+        flex-basis: 315px;
+      }
+
+      &:nth-child(3) {
+        order: 2;
+        flex-basis: 295px;
+      }
+
+      &:nth-child(4) {
+        order: 5;
+        flex-basis: 295px;
+      }
+
+      &:nth-child(5) {
+        order: 3;
+        flex-basis: 266px;
+      }
+
+      &:nth-child(6) {
+        order: 6;
+        flex-basis: 266px;
       }
     }
   }
