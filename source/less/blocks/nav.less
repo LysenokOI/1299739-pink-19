@@ -29,7 +29,20 @@
 }
 
 .nav__toggle {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  fill: @light;
+  line-height: normal;
   cursor: pointer;
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @pink--opacity;
+  }
 }
 
 .nav__toggle-cross {
@@ -70,22 +83,6 @@
 
   &:active {
     color: @light--opacity;
-  }
-}
-
-.nav__toggle {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  fill: @light;
-  line-height: normal;
-
-  &:hover {
-    fill: @pink;
-  }
-
-  &:active {
-    fill: @pink--opacity;
   }
 }
 
